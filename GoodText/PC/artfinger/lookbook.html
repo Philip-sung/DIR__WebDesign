@@ -1,0 +1,29 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<div module="product_listnormal" class="ec-base-product" id="productnew" style="" >
+            <!--
+            $count = 20
+                ※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있습니다.
+                ※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+            -->
+            <ul class="prdList grid1">
+            <!--@import(/artfinger/common/product_lookbook.html)-->
+            </ul>
+</div>
+
+
+<div module="product_normalpaging" class="ec-base-paginate">
+    <!--@import(/artfinger/common/page_pre.html)-->
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <!--@import(/artfinger/common/page_next.html)-->
+
+</div>

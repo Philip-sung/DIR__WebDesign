@@ -1,0 +1,84 @@
+<!--@layout(/layout/basic/layout.html)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, shrink-to-fit=no">
+<div module="product_detail">
+    <!--@css(/css/module/product/detail.css)-->
+    <!--@js(/js/module/product/detail.js)-->
+
+    
+    <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+    <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+    <div class="overview" module="product_image">
+        <!--@js(/js/module/product/image.js)-->
+        <!-- 공급사 바로가기버튼 영역 -->
+        <!--@import(/artfinger/detail_imgarea.html)-->
+    </div><!-- //참고 -->
+	
+    <div class="prdDesc">
+        <!--@import(/artfinger/detail_baseprdinfo.html)-->
+        <!--@import(/artfinger/detail_optionprdinfo.html)-->
+        <!--@import(/artfinger/detail_coupon.html)-->
+
+        <div class="sizeGuide {$size_guide_display|display}">
+            <a href="#none" class="{$size_guide_class}" product_no="{$product_no}">SIZE CHART</a>
+        </div>
+
+        <!--@import(/artfinger/detail_setprdinfo.html)-->
+        <!--@import(/artfinger/detail_addprdinfo.html)-->
+        
+        <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+        <div id="{$total.total_id}" class="{$total.total_display|display}">
+            <table border="1" summary="">
+                <caption>상품 목록</caption>
+                <colgroup>
+                    <col style="width:auto;">
+                    <col style="width:100px;">
+                    <col style="width:35px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">상품 정보</th>
+                        <th scope="col">가격</th>
+                        <th scope="col">삭제</th>
+                    </tr>
+                </thead>
+                <!-- 참고 : 옵션선택 또는 세트상품 선택시 상품이 추가되는 영역입니다. 쇼핑몰 화면에는 아래와 같은 마크업구조로 표시됩니다. 삭제시 기능이 정상동작 하지 않습니다.-->
+                <tbody>
+                    <!-- 상품 목록 -->
+                </tbody>
+                <!-- //참고 -->
+            </table>
+        </div>
+        
+		<!--TOTAL 가격표 삭제
+        <div id="{$total.total_price_id}" class="totalPrice">
+            <strong>TOTAL : </strong> <span class="{$total.total_cnt}"><strong class="price">0</strong></span>
+        </div> -->
+        <p class="ec-base-help {$price_warning_class}">할인가가 적용된 최종 결제예정금액은 주문 시 확인할 수 있습니다.</p>
+        
+
+        <!-- //참고 -->
+        <!--@import(/artfinger/detail_button_relative.html)-->
+        <!--@import(/artfinger/detail_button_fixed.html)-->
+        <!--@import(/artfinger/detail_button_snslink.html)-->
+    </div>
+</div>
+
+<!--div id="tabProduct" class="ec-base-tab">
+    <ul>
+        <li class="selected"><a href="#prdDetail" target="_self">DETAIL</a></li>
+        <li><a href="#prdReview" name="use_review">REVIEW<span module="product_additional" style="margin:0">({$review_count})</span></a></li>
+        <li><a href="#prdQnA" name="use_qna">Q&A<span module="product_additional" style="margin:0">({$qna_count})</span></a></li>
+    </ul>
+</div-->
+
+<div module="product_additional">
+    <!--@css(/css/module/product/additional.css)-->
+    <!--@css(/css/module/product/additional_animation.css)-->
+    <!--@import(/artfinger/detail_product.html)-->
+    <!--@import(/artfinger/detail_purchaseinfo.html)-->
+    <!--@import(/artfinger/detail_purchaseinfo_necessary.html)-->
+    <!--@import(/artfinger/detail_productwithitem.html)-->
+    <!--@import(한글텍스트부분삭제 시 재적용/artfinger/detail_productreview.html)-->
+    <!--@import(한글텍스트부분삭제 시 재적용/artfinger/detail_productqna.html)-->
+</div>
+ 

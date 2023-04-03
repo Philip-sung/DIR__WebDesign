@@ -1,0 +1,27 @@
+<div id="prdInfo" class="purchasinfo" module="mall_faq"  style="display:none;"><!-- 상품구매안내 -->
+        <div class="prd_info_tab">
+        <ul  class="accordion">
+            <li><a style="font-size:10px; font-weight:500"><i class="xi-credit-card"></i>PAYMENT INFO</a>
+             <ol class="tab_wrap" style="color:#555; font-size:11px; letter-spacing:0;">{$payment_info}</ol> 
+            </li>
+        </ul>  
+        <div style="border-bottom:1px solid #ddd; padding:0px 30px; line-height:50px"></div>
+        <ul  class="accordion">
+            <li><a style="font-size:10px; font-weight:500"><i class="xi-truck"></i>DELIVERY INFO</a>
+                <ul class="tab_wrap" style="color:#555;font-size:11px; letter-spacing:0;">
+                <li>배송 방법 : {$shipping_method}</li>
+                <li>배송 지역 : {$shipping_area}</li>
+                <li>배송 비용 : {$shipping_fee}</li>
+                <li>배송 기간 : {$shipping_period}</li>
+                <li>배송 안내 : {$shipping_info}</li>
+                </ul>
+            </li>
+        </ul>
+       <div style="border-bottom:1px solid #ddd; padding:0px 30px; line-height:50px"></div>
+       <ul  class="accordion">
+            <li><a style="font-size:10px; font-weight:500"><i class="xi-box"></i>EXCHANGE INFO</a>
+             <ol class="tab_wrap" style="color:#555; font-size:11px; letter-spacing:0;">{$product_change_info}</ol> 
+            </li>
+        </ul>      
+        </div>     
+    </div><!-- //상품구매안내 -->

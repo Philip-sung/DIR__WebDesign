@@ -1,0 +1,54 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<!-- 일반상품 -->
+
+<div style="padding:0px 0px 0">
+<!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+<div class="ec-base-product typeThumb" module="product_listnormal" id="productnew"> 
+    <!--@css(/artfinger/css/lookbook.css)-->
+    <!--@js(/js/module/product/listnormal.js)-->
+    <!--
+        $count = 20
+        $moreview = yes
+        $cache = yes
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+    <ul class="prdList grid1" >
+        <li>
+            <div class="thumbnail">
+                <a href="/artfinger/detail_lookbook.html{$param}"><img src="{$image_medium}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+            </div>
+            <div class="description" >
+                <strong class="name {$product_name_display|display}" style="margin-bottom:30px;"><a href="/artfinger/detail_lookbook.html{$param}" style="color:#000;font-size:13px">{$product_name}</a></strong>
+                <ul class="spec" style="margin-top: 0px;">
+                    <li class="summary2"><a href="/artfinger/detail_lookbook.html{$param}">{$summary_desc}</a></li>
+                    <li class="summary1">{$simple_desc}</li>
+  
+                </ul>
+            </div>
+        </li>
+         <li>
+            <div class="thumbnail">
+                <a href="/artfinger/detail_lookbook.html{$param}"><img src="{$image_medium}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+            </div>
+            <div class="description" >
+                <strong class="name {$product_name_display|display}" style="margin-bottom:30px;"><a href="/artfinger/detail_lookbook.html{$param}" style="color:#000;font-size:13px">{$product_name}</a></strong>
+                <ul class="spec" style="margin-top: 0px;">
+                    <li class="summary2"><a href="/artfinger/detail_lookbook.html{$param}">{$summary_desc}</a></li>
+                    <li class="summary1">{$simple_desc}</li>
+  
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div><!-- //참고 -->
+</div>
+<div module="product_listmore" class="paginate typeMoreview">
+    <a href="#none" onclick="{$more_action}">
+        MORE(<span id="more_current_page">{$current_page}</span>/<span id="more_total_page">{$total_page}</span>)<span class="icoMore"></span>
+    </a>
+</div>
+
+ 

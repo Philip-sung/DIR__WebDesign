@@ -1,0 +1,22 @@
+
+.main_banner_wrap {padding:0 10px;}
+figure.mainbanner {position: relative;  overflow: hidden; margin:35px auto 0; display:inline-block;  width:50%;  color: #ffffff;  text-align:center;}
+figure.mainbanner * { -webkit-box-sizing: border-box; box-sizing: border-box;  -webkit-transition: all 0.35s ease;  transition: all 0.35s ease;}
+figure.mainbanner img { max-width: 100%; backface-visibility: hidden; vertical-align: middle;}
+figure.mainbanner { -webkit-transition: all 0.35s ease;transition: all 0.35s ease; }
+figure.mainbanner:before {  content:"";  opacity: 0; -webkit-transition: all 1s ; transition: all 1s ; position: absolute; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.3);  }
+figure.mainbanner:hover:before { content:""; opacity: 1;    }
+figure.mainbanner figcaption { position: absolute;left:50%; top:50%;    
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+ /* bottom: 5px; */
+}
+figure.mainbanner figcaption { text-align:center;   z-index: 1;  padding: 40px;}
+figure.mainbanner h3,
+figure.mainbanner .links {  width: 100%; margin: 5px 0; padding: 0; font-size:14px;}
+figure.mainbanner p {  font-size: 0.8em; font-weight: 300; letter-spacing: 1px; opacity: 0; top: 50%;}
+figure.mainbanner a { position: absolute; top: 0;  bottom: 0; left: 0;right: 0; z-index: 1;}
+figure.mainbanner:hover p {  -webkit-transform: translate(0px, 0px);  transform: translate(0px, 0px);  opacity: 1;}
+figure.mainbanner:hover p {padding:3px 1px; text-align:center; margin:10PX auto; background:#000; font-size:10px}

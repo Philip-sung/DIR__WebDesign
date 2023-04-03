@@ -1,0 +1,20 @@
+/******** background-image: url(/artfinger/main/업로드이미지.jpg);*********/
+/*첫번째*/
+.swiper-slide #slide-one {    background-image: url(/artfinger/main/main01.jpg); background-position:center center;}
+/*두번째*/
+.swiper-slide #slide-two {    background-image: url(/artfinger/main/main02.jpg); background-position:center center;}
+/*세번째*/
+.swiper-slide #slide-three {    background-image: url(/artfinger/main/main03.jpg); background-position:center center;}
+ 
+ 
+
+
+
+
+ 
+.swiper-slide .slide-img {  background-size: cover;height:100%; width: 100%; display: block;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;}
+ 

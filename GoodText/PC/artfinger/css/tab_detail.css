@@ -1,0 +1,37 @@
+/* Tab Content */
+
+ul.tabs{   font-size: 0;  margin:15px 0 0px; list-style-type: none; text-align: left;  /*set to left, center, or right to align the tabs as desired*/}
+ul.tabs li {display:inline-block; text-align:left;  margin: 0;  margin-right:15px; padding: 7px 0;   }     
+ul.tabs li a{  font-size:10px; color: #999; }     
+ul.tabs li:visited{  color: #000;}       
+ul.tabs li:hover{  }      
+ul.tabs li.selected a,
+ul.tabs li.selected:hover { position: relative; top: 0px;   background: white; color:#000 }             
+ul.tabs li.selected:hover{  text-decoration: none;}     
+div.tabcontents{  border-top:0; padding:10px 0; color: rgb(99, 99, 99);}
+div.tabcontents p {line-height:150%; height:150%; color: rgb(99, 99, 99);}
+
+
+
+
+
+/*Tab 2*/
+.css3-tab-nav {   font-size: 0;  margin:0px 0 0px; list-style-type: none; text-align: left;  /*set to left, center, or right to align the tabs as desired*/}
+.css3-tab-nav label {display:inline-block; text-align:left;  margin: 0;  margin-right:15px; padding: 7px 0;   font-size:10px; color: #999;  }      
+
+div.tabcontents{  border-top:0; padding:10px 0; color: rgb(99, 99, 99);}
+div.tabcontents p {line-height:150%; height:150%; color: rgb(99, 99, 99);}
+
+
+.css3-tab { list-style: none; margin: 0 auto 40px; padding: 0px 0 0 0; position: relative; width: 100%;}
+.css3-tab input[type='radio'] { display: none;}
+.css3-tab .css3-tab-content {  display: none;  border-top:0; padding:10px 0; color: rgb(99, 99, 99);}
+.css3-tab .css3-tab-content p   {line-height:150%; height:150%; color: rgb(99, 99, 99);}
+.css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] { color:#000; }
+.css3-tab input[id='tabOne']:checked ~ div.tab-one { display: block;   }
+.css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] { color:#000; }
+.css3-tab input[id='tabTwo']:checked ~ div.tab-two {display: block;  }
+.css3-tab input[id='tabThree']:checked ~ .css3-tab-nav label[for='tabThree'] { color:#000; }
+.css3-tab input[id='tabThree']:checked ~ div.tab-three {display: block;  }
+.css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {  color: black; cursor: default;}
+.css3-tab input[id='addNew']:checked ~ div.add-new { display: block;   }

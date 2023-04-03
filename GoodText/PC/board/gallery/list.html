@@ -1,0 +1,80 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div module="Board_ListPackage_8">
+    <!--@css(/css/module/board/listPackage_gallary.css)-->
+
+    <div module="board_list_8" id="productnew">
+        <!--
+            $count = 25
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+        <ul class="press_grid">
+            <li class="col1  animatable fadeInUp" >
+                <a href="{$link_board_detail}" class="imgLink"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a>
+                {$checkbox}
+                <a href="{$link_board_detail}" class="imgLink_">{$subject}</a>
+                <span>
+                    <strong><i class="xi-user" style="vertical-align:middle"></i>  {$writer} </strong>
+                    <em class="{$date_display|display}"><i class="xi-time-o" style="vertical-align:middle"></i>  {$write_date}</em>
+                    <span class="pressbutton"><a href="{$link_board_detail}">read more</span>
+                </span>
+            </li>
+            <li class="col1  animatable fadeInUp">
+                <a href="{$link_board_detail}" class="imgLink"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a>
+                {$checkbox}
+                <a href="{$link_board_detail}" class="imgLink_">{$subject} </a>
+                <span>
+                    <strong><i class="xi-user" style="vertical-align:middle"></i>  {$writer} </strong>
+                    <em class="{$date_display|display}"><i class="xi-time-o" style="vertical-align:middle"></i>  {$write_date}</em>
+                    <span class="pressbutton"><a href="{$link_board_detail}">read more</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="boardListEmpty {$empty_display|display}" module="board_empty_8">
+        <p>{$empty_message}</p>
+    </div>
+
+    <div module="board_ButtonList_8" class="{$write_display|display} ec-base-button typeBG">
+        <span class="gRight">
+            <div class="artfinger_button_board_write" style="width:90px;"><a href="/board/gallery/write.html{$param_write}" class="{$write_display|display}">WRITE</a></div>
+        </span>
+    </div>
+</div>
+    <div module="board_search_8">
+    <!--@css(/css/module/board/search.css)-->
+    <fieldset class="boardSearch">
+        <legend>게시물 검색</legend>
+        <p>{$form.search_date} {$form.search_key}{$form.search} <a href="#none" onclick="{$action_search}" >SEARCH</a></p>
+    </fieldset>
+	</div>
+<div module="board_paging_8" class="ec-base-paginate">
+     <a href="{$param_prev}"><i class="xi-angle-left-min"  alt="첫 페이지" ></i></a>
+    <ol>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+    </ol>
+    <a href="{$param_next}"><i class="xi-angle-right-min"   alt="다음 페이지"  ></i></a>
+</div>
+
+
+<!-- 관리자 전용 메뉴 -->
+<div module="board_catemove_8">
+    <!--@css(/css/module/board/catemove.css)-->
+    <p>
+        해당 글을 {$form.board_category_move} 카테고리로
+        <a href="#none" onclick="{$action_category_move}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/btn_move.gif" alt="글 이동" /></a>
+    </p>
+</div>
+
+<div module="board_function_8">
+    <!--@css(/css/module/board/function.css)-->
+    <p>
+        해당 글 이동 {$form.boardGroup} 으로
+        <a href="#none" onclick="{$action_article_move}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/btn_move.gif" alt="글 이동" /></a>
+        <a href="#none" onclick="{$action_article_copy}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/btn_copy.gif" alt="글 복사" /></a>
+        * 댓글포함, 답변 불포함
+    </p>
+</div>
+<!-- //관리자 전용 메뉴 -->

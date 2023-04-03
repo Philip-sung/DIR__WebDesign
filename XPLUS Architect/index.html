@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Refresh" content="0;url=http://xplusarchitect.com/xplus/main.html"></meta>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/custom.css">
+
+		<title>XPlus POSITIVE ARCHITECTS & PARTNERS INC.</title>	
+
+  </head>
+<body>
+	    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+			if(window.jQuery) {
+				$(document).ready(function () {
+					$(".read-more").click(function (e) {
+						e.preventDefault();
+						$(this).parent().toggleClass("xp-open");
+						$(this).toggleClass("read-less");
+					});
+					$('.modal-body .list-group a[href^="#"]').click(function (e) {
+						e.preventDefault();
+						$("#modalNavigation").modal('hide');
+						var target = this.hash,
+						menu = target;
+						$target = $(target);
+						console.log($target);
+						$('html, body').animate({
+							'scrollTop': Math.ceil($target.offset().top)
+						}, 500, 'swing');
+					});
+					var headerHeight = $('.navbar').height();
+					var onScroll = function () {
+						var scrollPos = $(document).scrollTop();
+						var contWrapPos = $("#xplus").offset().top;
+						console.log(contWrapPos);
+						console.log(contWrapPos);
+						if (scrollPos > contWrapPos) {
+							$(".navbar").addClass("fixed");
+						} else if (scrollPos <= contWrapPos - 5) {
+							$(".navbar").removeClass("fixed");
+						}
+				}
+				//tab메뉴 스크롤고정
+				$(window).on("scroll", onScroll);
+				onScroll();
+
+				});
+			}
+			}
+			</script>
+</body>
+</html>

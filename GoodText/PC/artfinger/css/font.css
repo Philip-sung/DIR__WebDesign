@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'goudos';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/web/upload/font/TCB_____.TTF)  format('truetype');
+}
+
+body,input,textarea,select,button {font-family:goudos}
+
+
+
+.ti-shopping-cart-full::before {  content: "\e655"; }

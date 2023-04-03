@@ -1,0 +1,80 @@
+<!--@layout(/layout/basic/layout_shop.html)-->
+
+<div module="Product_menupackage">
+    <!--@css(/css/module/product/menupackage.css)-->
+    <!--@js(/js/module/product/menucategory.js)-->
+    <!--p class="banner">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</p-->
+   <div class="title" module="product_headcategory"><h2><span style="font-size:17px;">{$name_2}</span></h2><h2 class="hid_ti2">{$name_2}</h2></div>
+    <ul class="menuCategory">
+        <li module="product_displaycategory" style="display:{$display};" class="{$selected}">
+            <a href="/{$design_page_url}?{$param_cate_no}" rel="{$category_name}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+            <ul module="product_children">
+                <li class="{$selected}">
+                    <a href="/{$design_page_url}?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="{$selected}">
+                    <a href="/{$design_page_url}?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+ 
+</div>
+
+ 
+
+<!-- 일반상품 -->
+<div module="product_normalpackage">
+    <!--@css(/css/module/product/listnormal.css)-->
+    <!--div module="product_normalmenu">
+             <!--
+             $compare_page = /product/compare.html
+             -->
+        <!--div class="function">
+            <ul id="type" module="product_Orderby">
+                <li><a href="{$param}" {$style}>{$sort_name}</a></li>
+                <li><a href="{$param}" {$style}>{$sort_name}</a></li>
+            </ul>
+        </div>  
+    </div-->
+
+    <div module="product_listnormal" class="ec-base-product">
+            <!--
+            $count = 18
+                ※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있습니다.
+                ※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+            -->
+            <ul class="prdList grid3">
+            <!--@import(/artfinger/common/product.html)-->
+            </ul>
+    </div>
+</div>
+
+<div module="product_normalpaging" class="ec-base-paginate">
+    <!--@import(/artfinger/common/page_pre.html)-->
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <!--@import(/artfinger/common/page_next.html)-->
+</div>
+ 

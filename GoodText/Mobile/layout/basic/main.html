@@ -1,0 +1,228 @@
+<!--=====================================================================================
+
+
+해당 쇼핑몰은 A R T F I N G E R 템플릿을 사용하고 계십니다.
+
+디자인 무단 도용 또는 소스를 불법적으로 유통시 
+
+법적의 제제를 받을 수 있음을 알려드립니다.
+
+
+
+===========================================================================================
+
+
+쇼핑몰 이용 시 오류 발생 및 수정요청은 
+
+[홈페이지] http://artfinger.co.kr 
+
+[대표전화] 070-8811-9541 로 문의주시기 바랍니다.
+
+
+================================================================================================-->
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+        <meta name="format-detection" content="telephone=no">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/web/upload/addbase/fullpage.min.css" />
+        <!--@import(/artfinger/head-css.html)-->
+        <!--@import(/artfinger/head-js.html)-->
+    </head>
+
+    <body id="main">
+        <div module="Popup_MultiPopup">
+            <!--
+$banner_popup_no =
+※ 노출시킬 팝업의 ID를 숫자로 넣어주세요.
+-->
+            {$popup}
+        </div>
+        <div module="Popup_MultiBanner">
+            <!--
+$banner_popup_no =
+※ 노출시킬 배너의 ID를 숫자로 넣어주세요.
+-->
+            {$banner}
+        </div>
+
+        <!--wrap시작-->
+        <div id="wrap">
+            <!--@import(/layout/basic/sidebar-art.html)-->
+            <div id="container">
+                <header id="header">
+                    <div class="header" style="background-color: #c01718; padding-bottom: 8px;">
+                        <div class="category"><a href="#none" class="fold"><span></span><span></span><span></span><span></span></a></div> 
+                        <h1 module="Layout_LogoTop" style="margin-left:10px;"><a href="/"><!--@import(/toplogo.html)--></a></h1>
+                        <div module="Layout_orderBasketcount"><a href="/order/basket.html" class="btnBasket"><img src="/web/upload/addbase/addimage/btn_basket_white.png" style="height: 27px; width:23px; margin-left:20px;"><span class="count {$basket_count}" style="margin-top:-8px; margin-right:-11px;">{$basket_count}</span></a></div>
+                    </div>  
+
+                </header>
+                <ul id="menu_full" class="main_menu">
+                    <!--오른쪽 페이지 네이트 인덱스입니다.-->
+                    <li data-menuanchor="anchor1"><a href="#anchor1"></a></li><!--01번째 이미지 인덱스입니다.-->
+                    <li data-menuanchor="anchor2"><a href="#anchor2"></a></li><!--02번째 이미지 인덱스입니다.-->
+                    <li data-menuanchor="anchor3"><a href="#anchor3"></a></li><!--03번째 이미지 인덱스입니다.-->
+                    <li data-menuanchor="anchor4"><a href="#anchor4"></a></li><!--04번째 이미지 인덱스입니다.-->
+                    <!--오른쪽 페이지 네이트 인덱스입니다.-->  
+                </ul>
+
+           <!-- <div id="fullpage" style="margin-top:68px;"> -->
+                <div style="margin-top:85px;">
+                    <div class="section sect1"  style=" background-size:cover; background-position:center center; background-size:cover; z-index:4" >
+                        <a href="#" id="backl1"></a>
+                    </div>
+
+                    <div class="section sect2"  style=" background-size:cover; background-position:center center; background-size:cover; z-index:4; position: relative;" >
+                        <a href="" id="backl2"></a>                
+                    </div>
+
+                    <div class="section sect3"  style=" background-size:cover; background-position:center center; background-size:cover; z-index:4; position: relative;" >
+                        <a href="#" id="backl3"></a>                 
+                    </div>
+                    
+                    <div class=" fp-section">
+                    <div class="ec-base-product typeThumb fp-scrollable" module="product_listmain_1" style="margin-top:10px">
+                        <!--$count = 6
+                    ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                    ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                    -->
+                        <ul class="prdList grid2">
+                            <li>
+                                <div class="thumbnail">
+                                    <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                                    <!-- LEVI위시리스트 사진 앞의 하트 아이콘 삭제_230329 <span class="wish">{$list_wish_icon}</span>-->
+                                </div>
+                                <div class="description">
+                                    <div class="timesale_box {$product_sale_display|display}"><span class="saletime"></span><span class="sale_per"></span></div>
+                                    <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                                    <div class="summary_desc {$summary_desc|display}">{$summary_desc}</div>
+                                    <ul class="spec">
+                                        <!-- LEVI 할인가 삭제_230330 <li class="price_custom" id="custom{$disp_product_custom|numberformat}"><strike>{$disp_product_custom}</strike></li> -->
+                                        <li class="price {$product_price_display|display} {$product_sale_strike}"><a style="color: #c01718">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</a></span></li>
+                                        <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                        <li class="price {$product_promotion_display|display}" style="padding:0;margin:0;">
+                                            <div class="discountPeriod {$product_promotion_display|display}">
+                                                <div class="layerDiscountPeriod">
+                                                    <div class="inner">
+                                                        <ul>
+                                                            <li>{$product_promotion_dc_price}</li>
+                                                            <li>{$product_promotion_start_date} ~ {$product_promotion_end_date}</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="color {$colorchip_display|display}">
+                                            <div module="product_Colorchip">
+                                                <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                                <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                            </div>
+                                        </li>
+                                        <li class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</li>
+                                        <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                        <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                                        <li class="cart">{$basket_icon}</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                                    <!-- LEVI위시리스트 사진 앞의 하트 아이콘 삭제_230329 <span class="wish">{$list_wish_icon}</span> -->
+                                </div>
+                                <div class="description">
+                                    <div class="timesale_box {$product_sale_display|display}"><span class="saletime"></span><span class="sale_per"></span></div>
+                                    <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                                    <div class="summary_desc {$summary_desc|display}">{$summary_desc}</div>
+                                    <ul class="spec">
+                                        <!-- LEVI 할인가 삭제_230330 <li class="price_custom" id="custom{$disp_product_custom|numberformat}"><strike>{$disp_product_custom}</strike></li> -->
+                                        <li class="price {$product_price_display|display} {$product_sale_strike}"><a style="color: #c01718">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</a></span></li>
+                                        <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                        <li class="price {$product_promotion_display|display}" style="padding:0;margin:0;">
+                                            <div class="discountPeriod {$product_promotion_display|display}">
+                                                <div class="layerDiscountPeriod">
+                                                    <div class="inner">
+                                                        <ul>
+                                                            <li>{$product_promotion_dc_price}</li>
+                                                            <li>{$product_promotion_start_date} ~ {$product_promotion_end_date}</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="color {$colorchip_display|display}">
+                                            <div module="product_Colorchip">
+                                                <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                                <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                            </div>
+                                        </li>
+                                        <li class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</li>
+                                        <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                        <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                                        <li class="cart">{$basket_icon}</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div module="product_listmore_1" class="ec-base-paginate typeMoreview">
+                        <a href="#none" onclick="{$more_action}" class="btnMore" <!--LEVI more버튼 스타일 적용 보류_230330style="margin-left: 2%; margin-right: 2%; align-item: center, justify-content: center; border-style: solid; border-width: 1px; border-color: #ddd;"-->
+                            MORE <!--LEVI 몇번째쪽인지 삭제_230330 <span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>
+                            <span class="icoMore"></span>-->
+                        </a>
+                    </div>
+                    
+                    <!--05(여기에는 하단정보가 기입되기때문에 만지지말아주세요.) 번째 이미지 입니다.-->
+                    <div class="fp-auto-height" style="z-index:999;">
+                        <div class="myContent">
+                            <!--@import(/layout/basic/footer.html)-->
+                        </div>
+                    </div>
+                    </div>
+                    <!--05 번째 이미지 입니다.-->
+                </div>
+            <script type="text/javascript" src="/artfinger/js/scrollOverflow.min.js"></script>
+            <script type="text/javascript" src="/web/upload/addbase/scrolloverflow.js"></script>
+            <script type="text/javascript" src="/web/upload/addbase/fullpage.min.js"></script>
+            <script type="text/javascript">
+                var myFullpage = new fullpage('#fullpage', {
+                    autoScrolling: true,
+                    fitToSection: false,
+                    scrollOverflow: true,
+                    scrollable: true,
+                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                    verticalCentered: true,
+                    anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6'],
+                    menu: '#menu_full',
+                    sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
+                    afterLoad: function(origin, destination, direction, trigger){
+                        var origin = this;
+                        //using anchorLink
+                        if(destination.anchor == 'anchor4' || destination.anchor == 'anchor5'){
+                            //alert("anchor4 ended loading");
+                            myFullpage.setAutoScrolling(false);
+                        }
+                    },
+                    onLeave: function(origin, destination, direction, trigger){
+                        var leavingSection = this;
+
+                        //after leaving section 2
+                        if(destination.anchor != 'anchor4'){
+                        	//alert("Escaping anchor4");
+                            myFullpage.setAutoScrolling(true);
+                    	}
+                    }
+                });
+            </script>
+        </div>
+        </div>		
+    <!--wrap끝--> 
+
+    <!--@import(/main_control.html)--> 
+    </body>
+</html>

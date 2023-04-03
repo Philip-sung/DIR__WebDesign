@@ -1,0 +1,24 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+
+<div class="myshopMain">
+
+
+   
+    <div module="myshop_main">
+        <!--@css(/css/module/myshop/main.css)-->
+        <ul>
+            <li class="order"><a href="/myshop/order/list.html">ORDER</a></li>
+            <li class="modify"><a href="/member/modify.html">PROFILE</a></li>
+            <li class="wishlist"><a href="/myshop/wish_list.html">WISH LIST <span class="count {$wish_count_display|display}">({$wish_count})</span></a></li>
+            <li class="likeit {$myLike_display|display}"><a href="{$myLike_href}">LIKE</a></li>
+            <li class="mileage"><a href="/myshop/mileage/historyList.html">MILEAGE</a></li>
+            <li class="deposits {$deposit_display|display}"><a href="/myshop/deposits/historyList.html">DEPOSITS</a></li>
+            <li class="consult {$consult_display|display}"><a href="/board/consult/list.html">1:1 CONSULT</a></li>
+            <li class="coupon {$coupon_display|display}"><a href="/myshop/coupon/coupon.html">COUPON <span class="count {$coupon_count_display|display}">({$coupon_count})</span></a></li>
+            <li class="board"><a href="/myshop/board_list.html">BOARD</a></li>
+            <li class="address"><a href="/myshop/addr/list.html">ADDRESS</a></li>
+        </ul>
+    </div>
+</div>

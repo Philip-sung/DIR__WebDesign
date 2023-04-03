@@ -1,0 +1,42 @@
+ul {padding:0}
+#myshopMain {   margin:-1% 0 0;  }
+#myshopMain div {border:1px solid #ddd;vertical-align:middle;padding:40px; width:31.33%; margin:0.5% 0.5% 0.7%; box-sizing:border-box; display:inline-block; text-align:center; height:190px; }
+#myshopMain::after {clear:both; display:block; content:""}
+
+
+#myshopMain h3 { padding:10px 0px 0px; font-size:11px; color:#000; font-weight:normal;  text-align:left }
+#myshopMain h3 i {padding-right:5px}
+#myshopMain h3 strong { font-size:13px; color:#000;  font-weight:normal; padding:0 0 20px; }
+#myshopMain h3 a:hover { text-decoration:none; }
+#myshopMain p a { display:block;font-size:11px; line-height:18px; color:#bababa; padding:20px 0; text-align:left;}
+#myshopMain p a:hover {color:#555;text-decoration:none;}
+
+#myshopMain .shopMain h3 { padding:0 0 15px; font-size:13px; color:#000; font-weight:normal; }
+
+/*  reactive 소스 */
+@media all and (max-width : 640px) {  /*아이폰 5이하 */
+ #myshopMain div {/*border:1px solid #ddd;*/ vertical-align:middle;padding:40px; width:98%; margin:0.5%; box-sizing:border-box; display:inline-block; text-align:center; height:190px; }
+            }
+
+@media all and (min-width : 641px) and (max-width : 802px) and (orientation : landscape)  {  /*아이패드 탭 데스크탑 -모드*/
+ #myshopMain div {/*border:1px solid #ddd;*/ vertical-align:middle;padding:40px; width:48%; margin:0.5%; box-sizing:border-box; display:inline-block; text-align:center; height:220px; }
+            }
+@media all and (min-width : 641px) and (max-width : 802px) and (orientation : portrait)  {  /*아이패드 탭 |모드*/
+  #myshopMain div {/*border:1px solid #ddd;*/ vertical-align:middle;padding:40px; width:48%; margin:0.5%; box-sizing:border-box; display:inline-block; text-align:center; height:220px; }
+            }
+
+@media all and (min-width : 803px) and (max-width : 925px)  {  
+#myshopMain div {/*border:1px solid #ddd;*/ vertical-align:middle;padding:40px; width:48%; margin:0.5%; box-sizing:border-box; display:inline-block; text-align:center; height:190px; }
+            }
+
+@media all and (min-width : 926px) and (max-width : 1430px)   {  /*맥 */
+     
+}
+
+
+@media all and (min-width : 1431px) {
+  
+ 
+}  
+
+

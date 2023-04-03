@@ -1,0 +1,42 @@
+<div class="toplogo"><!--logo--> 
+      		<h1 module="Layout_LogoTop">
+    		<a href="/index.html"><!--@import(/artfinger/toplogo.html)--></a>
+    		</h1>  
+</div><!--//logo-->   
+
+<a href="#" class="leftcate_reactive_open" onclick="layer_open('layer2');return false;"><span class="line1"></span><span class="line2"></span><span class="line3"></span></a>
+
+<div class="leftcate_reactive_cont">
+    
+   <div class="bg">
+       <div class="btn-r"><a href="#" class="leftcate_reactive_close"></a></div>
+   </div>
+   
+   <div id="layer2" class="pop-layer">
+	 
+		 
+	    	<nav id="artfinger_slide">
+                <div class="leftcate_membership">
+                    <ul module="Layout_statelogoff">
+                       <li><a href="#loginLayer" class="loginLink">LOGIN</a></li><!--대카고리 명을 변경하시려면 검정색 텍스트만 변경해주세요-->
+                       <li><a href="/myshop/index.html" alt="MYPAGE">MYPAGE</a></li><!--대카고리 명을 변경하시려면 검정색 텍스트만 변경해주세요-->
+                       <li><a href="/order/basket.html" alt="CART">CART <span class="count {$basket_count_display|display}"><span>({$basket_count})</span></span></li>   <!--대카고리 명을 변경하시려면 검정색 텍스트만 변경해주세요-->
+                    </ul>   
+                     <ul module="Layout_statelogon">
+                       <li><a href="{$action_logout}" >LOGOUT</a></li><!--대카고리 명을 변경하시려면 검정색 텍스트만 변경해주세요-->
+                       <li><a href="/myshop/index.html" alt="MYPAGE">MYPAGE</a></li><!--대카고리 명을 변경하시려면 검정색 텍스트만 변경해주세요-->
+                       <li><a href="/order/basket.html" alt="CART">CART <span class="count {$basket_count_display|display}"><span>({$basket_count})</span></span></li><!--대카고리 명을 변경하시려면 검정색 텍스트만 변경해주세요-->     
+                    </ul> 
+                </div>    
+				 
+                  <!--@import(/artfinger/categorymenu.html)-->
+
+                <div class="snscate">  
+ 		 			<ul>
+            		 <!--@import(/artfinger/foot_sns.html)-->
+ 					 </ul>  
+		        </div>  
+			</nav>
+       
+	</div><!--close pop-layer-->
+</div>

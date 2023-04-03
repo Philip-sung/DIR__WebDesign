@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--PG크로스브라우징필수내용 시작-->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <!--PG크로스브라우징필수내용 끝-->
+    <title></title>
+    <!--@import(/artfinger/head-css.html)-->
+    <!--@import(/artfinger/head-js.html)-->
+    <!--@css(/artfinger/css/detail_mod.css)-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="progress_loading"></div>  
+<!--@import(/artfinger/top.html)-->
+    
+<!--header 시작-->   
+<!--@import(/artfinger/header-art.html)--> 
+<!--header 끝-->
+  
+<!--search 시작-->
+<!--@import(/artfinger/show_search.html)-->
+<!--search 끝--> 
+    
+<!--wrap시작-->
+<!--@import(/artfinger/wrap_lookbookDetail.html)-->
+<!--wrap끝-->    
+
+<!--footer 시작--> 
+<div style="margin-top:-100px">
+<!--@import(/artfinger/footer.html)--> 
+</div>    
+<!--footer 끝-->
+   
+<!--@import(/artfinger/payment.html)-->
+<!--@import(/artfinger/mo_pcconver.html)-->
+
+<script type="text/javascript">
+  (function() {
+    var win = $(window);
+    var sizes = {
+      half: 0.5,
+      full: 1,
+      threequarter: 3/4,
+      onefive: 1.5,
+      "double": 2,
+      triple: 3
+    }
+    for (k in sizes) {
+      var v = sizes[k]
+      $("." + k).css({
+       height: Math.floor(win.height() * v) + "px"
+      });
+    }
+
+    function attach() {
+        
+      $('.container2 .item2').stick_in_parent({offset_top:120});    
+      $(".container2 .item2:not(.use_manual)").stick_in_parent();
+
+      $(".container2 .item2.use_manual").stick_in_parent({
+        parent: ".container2",
+        spacer: ".manual_spacer"
+      });
+        
+      
+    }
+
+    attach();
+
+    $("#events_container2").on("sticky_kit:stick", function(e) {
+      $(e.target).html("got stick event");
+    });
+
+    $("#events_container2").on("sticky_kit:unstick", function(e) {
+      $(e.target).html("got unstick event");
+    });
+
+    $("#events_container2").on("sticky_kit:bottom", function(e) {
+      $(e.target).html("got bottom event");
+    });
+
+    $("#events_container2").on("sticky_kit:unbottom", function(e) {
+      $(e.target).html("got unbottom event");
+    });
+
+    $(document.body)
+      .on("click", ".recalc", function() {
+        console.log("Triggering recalc");
+        $(document.body).trigger("sticky_kit:recalc")
+      })
+      .on("click", ".detach", function() {
+        console.log("Triggering detach");
+        $(".container .item").trigger("sticky_kit:detach");
+      })
+      .on("click", ".attach", function() {
+        console.log("Triggering attach");
+        attach();
+      })
+      .on("click", ".grow_element", function(e) {
+        var elm = $($(e.currentTarget).data("target"));
+        elm.animate({height: elm.height() * 2}, function() {
+          console.log("triggering recalc...");
+          $(document.body).trigger("sticky_kit:recalc")
+        });
+      })
+      .on("click", ".scramble_element", function(e) {
+        var elm = $($(e.currentTarget).data("target"));
+        var new_height = Math.floor(win.height() * (1 + Math.random()));
+        console.log("setting new height", new_height);
+        elm.css({height: new_height + "px"});
+      });
+
+  })();
+</script>    
+    
+<script>
+(function($) {
+   
+
+    $('.accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('.tab_wrap');
+
+        $(this).closest('.accordion').find('.tab_wrap').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
+})(jQuery);
+</script>    
+ 
+         
+<!--@import(/main_control.html)-->       
+</body>
+</html>

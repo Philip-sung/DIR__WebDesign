@@ -1,0 +1,15 @@
+.xans-product-normalmenu { overflow:hidden; padding:0px 7px 10px 0; margin-top:-5px ; background:#fff; }
+.xans-product-normalmenu .sort { float:left; }
+.xans-product-normalmenu .sort select { max-width:150px; }
+
+.xans-product-normalmenu .viewType { width:63px; float:right; font-size:0; }
+.xans-product-normalmenu .viewType { }
+.xans-product-normalmenu .viewType li { display:inline-block; width:31px; height:27px;  background-size:50%; background-repeat:no-repeat; background-position:center; }
+.xans-product-normalmenu .viewType li.selected { }
+.xans-product-normalmenu .viewType li a { display:block; height:100%; }
+
+.xans-product-normalmenu .viewType li.list { background-image:url("/artfinger/img/ico_list.png"); }
+.xans-product-normalmenu .viewType li.thumb { background-image:url("/artfinger/img/ico_thum.png"); }
+.xans-product-normalmenu .viewType li.selected.list { background-image:url("/artfinger/img/ico_list_on.png"); }
+.xans-product-normalmenu .viewType li.selected.thumb { background-image:url("/artfinger/img/ico_thum_on.png"); }
+

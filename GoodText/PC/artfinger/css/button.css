@@ -1,0 +1,119 @@
+/*장바구니*/
+.artfinger_button_basket_delete,
+.artfinger_button_basket_clear,
+.artfinger_button_basket_userform {display:inline-block; border: 1px solid #dfdfdf; padding:2px 10px; transition: all 0.3s;}
+
+.artfinger_button_basket_delete:hover,
+.artfinger_button_basket_clear:hover,
+.artfinger_button_basket_userform:hover { border: 1px solid #000; background-color:#000; color:#dfdfdf; }
+
+.artfinger_button_basket_allorder {display:inline-block;}
+.artfinger_button_basket_allorder > a {padding:8px 20px; display:block; border : 1px solid #000;  background:#000;  color:#fff; transition: all 0.3s;}
+.artfinger_button_basket_allorder:hover > a {border : 1px solid #000; background:#fff; color:#000}
+
+.artfinger_button_basket_selectorder {display:inline-block;}
+.artfinger_button_basket_selectorder > a {padding:8px 20px; display:block;  border : 1px solid #dfdfdf;  transition: all 0.3s;}
+.artfinger_button_basket_selectorder:hover > a  {background:#dfdfdf; color:#000}
+
+.ec-base-qty input[type="text"] {  width: 22px; height: 23px; padding: 0 0 0 5px; line-height: 25px;  border: 1px solid #d4d8d9;  border-radius: 0px 0 0 0px;}
+
+/*장바구니-관심상품*/
+.artfinger_button_wish_allorder {display:inline-block; margin:5px 0;}
+.artfinger_button_wish_allorder > a {padding:4px 13px; display:block; border : 1px solid #000;  background:#000;  color:#fff; transition: all 0.3s;}
+.artfinger_button_wish_allorder:hover > a {border : 1px solid #000; background:#fff; color:#000}
+
+.artfinger_button_wish_list {display:inline-block; margin:5px 0;}
+.artfinger_button_wish_list > a {padding:4px 13px; display:block;  border : 1px solid #dfdfdf;  transition: all 0.3s;}
+.artfinger_button_wish_list:hover > a  {background:#dfdfdf; color:#000}
+
+.artfinger_button_wish_allorder2 {display:inline-block; margin:2px 0; width:100px;}
+.artfinger_button_wish_allorder2 > a {padding:4px 13px; display:block; border : 1px solid #000;  background:#000;  color:#fff; transition: all 0.3s;}
+.artfinger_button_wish_allorder2:hover > a {border : 1px solid #000; background:#fff; color:#000}
+
+.artfinger_button_wish_list2 {display:inline-block; margin:2px 0; width:100px;}
+.artfinger_button_wish_list2 > a {padding:4px 13px; display:block;  border : 1px solid #dfdfdf;  transition: all 0.3s;}
+.artfinger_button_wish_list2:hover > a  {background:#dfdfdf; color:#000}
+
+/*게시판*/
+.artfinger_button_board_search {display:inline-block; border: 1px solid #dfdfdf; padding:4px 20px; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s; }
+.artfinger_button_board_search:hover { border: 1px solid #000; background-color:#000; color:#dfdfdf; }
+
+.artfinger_button_board_move {display:inline-block; border: 1px solid #dfdfdf; padding:0px 20px; box-sizing: border-box; line-height:23px; transform: translateY(1px); transition: all 0.3s; }
+.artfinger_button_board_move:hover { border: 1px solid #000; background-color:#000; color:#dfdfdf; }
+
+.artfinger_button_board_copy {display:inline-block; border: 1px solid #dfdfdf; padding:0px 10px; box-sizing: border-box; line-height:23px;  transform: translateY(1px); transition: all 0.3s; }
+.artfinger_button_board_copy:hover { border: 1px solid #000; background-color:#000; color:#dfdfdf; }
+
+.artfinger_button_board_list {display:inline-block; }
+.artfinger_button_board_list > a { border: 1px solid #dfdfdf; padding:5px 20px; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_board_list:hover > a { border: 1px solid #9e9e9e; background-color:#9e9e9e; color:#fff; }
+
+.artfinger_button_board_write {display:inline-block; }
+.artfinger_button_board_write > a {  border : 1px solid #000;  background:#000;  color:#fff;  padding:5px 30px; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_board_write:hover > a { border: 1px solid #000; background-color:#fff; color:#000; }
+
+.artfinger_button_board_cancle {display:inline-block; }
+.artfinger_button_board_cancle > a { border: 1px solid #dfdfdf; padding:5px 20px; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_board_cancle:hover > a { border: 1px solid #000; background-color:#000; color:#dfdfdf; }
+
+.artfinger_button_board_enter {display:inline-block; }
+.artfinger_button_board_enter > a {  border : 1px solid #000;  background:#000;  color:#fff; border: 1px solid #000; padding:5px 20px; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_board_enter:hover > a { border: 1px solid #000; background-color:#fff; color:#000; }
+
+.artfinger_button_board_comment_submit {display:inline-block; }
+.artfinger_button_board_comment_submit > a { border: 1px solid #000; background-color:#000; color:#fff; padding:16px 27px; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_board_comment_submit:hover > a { border: 1px solid #000; background-color:#fff; color:#000; }
+
+
+/*주문서작성*/
+.artfinger_button_order {margin:0px 10px 0 0;}
+.artfinger_button_order > a {padding:8px 20px;    margin: 0 auto;  width:167px; display:block; border : 1px solid #000;  background:#000;  color:#fff; transition: all 0.6s;}
+.artfinger_button_order:hover > a {border : 1px solid #000; background:#fff; color:#000}
+ 
+
+/*회원가입*/
+.artfinger_button_join_join {display:block; }
+.artfinger_button_join_join > a { display:block; border: 1px solid #000; background:#000; color:#FFF!important;  height: 38px;    line-height: 38px; width:100%; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_join_join:hover > a { border: 1px solid #000; background-color:#FFF; color:#000!important; }
+ 
+/*로그인*/
+.artfinger_button_login_nomemberpur {display:block; margin-top:10px; }
+.artfinger_button_login_nomemberpur > a { display:block; border: 1px solid #9e9e9e; background:#9e9e9e; color:#fff; text-align:center;  line-height:36px; margin:0 auto; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_login_nomemberpur:hover > a { border: 1px solid #000; background-color:#fff; color:#000; box-sizing: border-box; }
+ 
+.artfinger_button_login_nomemberjo1 {width:100%; height:20px; margin:10px auto; padding:0 0;}
+.artfinger_button_login_nomemberjo2 {    border: 1px solid #9e9e9e; background: #9e9e9e; color: #fff; text-align: center;  line-height: 36px; width:400px;  margin: 30px auto; box-sizing: border-box; transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_login_nomemberjo2:hover {border: 1px solid #000; background-color:#fff; color:#000; box-sizing: border-box; }
+
+/*제품상세페이지*/
+.artfinger_button_detailboard_write { display:inline-block; border: 1px solid #dfdfdf; color:#fff!important;  background:#000;  text-align:center;  font-size:10px;  padding:6px 20px 6px; margin:0 auto; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_detailboard_write:hover {border: 1px solid #000; background-color:#fff; color:#000!important; box-sizing: border-box; }
+.artfinger_button_detailboard_list { display:inline-block; border: 1px solid #dfdfdf;   color:#000; text-align:center;  font-size:10px;   padding:6px 15px 6px; margin:0 auto; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.artfinger_button_detailboard_list:hover {border: 1px solid #ddd; background-color:#ddd; color:#000; box-sizing: border-box; }
+
+/*써치, 로그인 크로스버튼 모달*/
+#modalLayer{display:none; position:relative; z-index:999;}
+#modalLayer .modalContent{width:100%; height:100vh;  position:fixed; left:0; top:0; right:0; bottom:0; z-index:999999; background:rgba(255,255,255,0.8);  }
+#modalLayer .modalContent .close-btn {  position:absolute;  top:100px;  right:4%;  transform:translateY(-60%); width:70px;  height:70px; cursor:pointer;  transition: transform 0.3s;}
+#modalLayer .modalContent .close-btn::before, 
+#modalLayer .modalContent .close-btn::after {  content:"";  position:absolute;  top:50%;  left:50%; width:1px;  height:40px;  background-color:#000; transform:translateX(-50%) translateY(-50%) rotate(45deg);}
+#modalLayer .modalContent .close-btn::after { transform:translateX(-50%) translateY(-50%) rotate(-45deg);}
+#modalLayer .modalContent .close-btn:hover { transform:translateY(-60%) rotate(-90deg);}
+
+/*반응형 메뉴 크로스*/
+.leftcate_reactive_cont .btn-r {width:100px; height:100px; position:absolute; height:25px; top:0px; left:0px; margin:10px 0 0px; padding-top: 10px;  text-align:right;}
+.leftcate_reactive_cont .leftcate_reactive_close {  position:absolute;  top:38px;  right:25%;  transform:translateY(-60%); width:70px;  height:70px; cursor:pointer;  transition: transform 0.3s;}
+.leftcate_reactive_cont .leftcate_reactive_close::before, 
+.leftcate_reactive_cont .leftcate_reactive_close::after {  content:"";  position:absolute;  top:50%;  left:50%; width:1px;  height:40px;  background-color:#000; transform:translateX(-50%) translateY(-50%) rotate(45deg);}
+.leftcate_reactive_cont .leftcate_reactive_close::after { transform:translateX(-50%) translateY(-50%) rotate(-45deg);}
+.leftcate_reactive_cont .leftcate_reactive_close:hover { transform:translateY(-60%) rotate(-90deg);}
+
+/*어바웃페이지*/
+.about_button { display:inline-block; border: 1px solid #dfdfdf; color:#fff!important;  background:#000;  text-align:center;  font-size:10px;  padding:6px 20px 6px; margin:0 auto; box-sizing: border-box;  transform: translateY(1px); transition: all 0.3s;}
+.about_button:hover {border: 1px solid #000; background-color:#fff; color:#000!important; box-sizing: border-box; }
+.about_button:hover i {color:#000!important; }
+.about_button:hover a {color:#000}
+
+/*주문완료*/
+.order_btn_list {background:#000; padding:3px 7px; color:#fff!important; text-align:center; font-size:11px; font-weight:normal!important; }
+.order_btn_list > a {color:#fff;}

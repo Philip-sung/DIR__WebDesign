@@ -1,0 +1,48 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="board_ReadPackage_8">
+    <!--@css(/css/module/board/readPackage.css)-->
+    <!--@js(/js/module/board/readPackage.js)-->
+
+    <div module="board_read_8">
+        <!--
+            $delete_success_url = /board/gallery/list.html
+            $login_page_url = /member/login.html
+            $deny_access_url = /board/gallery/list.html
+        -->
+        <div class="boardView">
+            <div class="title">
+                <strong class="label hide">제목</strong>
+                <h3>{$subject}</h3>
+            </div>
+
+            <div class="content">
+                <strong class="label hide">내용</strong>
+                <p>{$content}</p>
+            </div>
+            <div class="password {$delete_button_auth|display}">
+                <strong class="label {$delete_button_auth|display} {$config.use_password|display}">비밀번호</strong>
+                <div class="form {$board_password_type}">
+                    <span class="passwordForm {$config.use_password|display}">{$form.password}</span>
+                    <span class="gRight">
+                        <a href="/board/gallery/modify.html{$param_modify}" class="btnBasic {$modify_button_auth|display}">수정</a>
+                        <button type="button" class="btnBasic {$delete_button_auth|display}" onclick="{$action_delete}">삭제</button>
+                    </span>
+                    <p class="ec-base-help {$config.use_password|display}">비밀번호 입력후 수정 혹은 삭제해주세요.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ec-base-button">
+            <div class="gLeft"><a href="{$link_board_list}" class="btnStrong">목록</a></div>
+            <a href="/board/gallery/reply.html{$param_reply}" class="btnStrong {$reply_button_auth|display}">답변쓰기</a>
+        </div>
+    </div>
+</div>
+
+
+<div module="board_movement_8">
+    <!--@css(/css/module/board/movement.css)-->
+    <ul class="boardMovement">
+        <li class="prev {$prev_display|display}"><strong>이전글</strong><a href="{$link_board_detail_prev}">{$prev_subject}</a></li>
+        <li class="next {$next_display|display}"><strong>다음글</strong><a href="{$link_board_detail_next}">{$next_subject}</a></li>
+    </ul>
+</div>

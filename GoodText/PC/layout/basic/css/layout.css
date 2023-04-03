@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* Layout */
+.return-top { right:12px; bottom:32px; position:fixed; z-index:9999; width:20px; height:20px; }
+.return-top > .icono-caretUp {text-align:center; }
+.return-top > .icono-caretUp i {line-height:35px; font-size:20px; color:#000; font-weight:normal;}
+#menu_full {display:none; right:2px; z-index:4444;}
+#menu_full li a {display:block; width:20px; height:20px; background-color:#dfdfdf;}
+.img_pb.img_main {display:none;}
+.section a {display:none; position: absolute; left: 0; right: 0; top: 0; bottom: 0;}
+.section a.show {display:block;}
+.xans-board-title  h2.hid_ti2 { display:block; padding:0 0 20px 0px; font-weight:normal; color:#000; font-size:12px; *display:inline; *zoom:1;  }
+#header {position:fixed; width:100%; top:0px; z-index:99 }
+#wrap { position:relative; width:100%; margin:0px auto 0; }
+#container {  margin:0 10px 100px 10px; *zoom:1; }
+#container:after { content:""; display:block; clear:both; }
+#contents {margin:130px auto 0; padding:0 200px 0 280px; min-height:72vh}
+#contents_ {margin:0px auto 0; padding:0 40px 0 280px; min-height:72vh}
+#container_detail { padding:0 40px 0 270px;  *zoom:1; }     
+
+#footer { width:100%; margin:150px auto 0}
+
+.main_img {position:relative; margin:0 auto 100px; text-align:center; width:100%}
+.main_img img {max-width:100%; display:block;}
+.main_img span {position:absolute; top: 50%; right:3%; user-select: none;  transform: translateX(-10%) translateY(-50%); -ms-user-select: none;    max-width: calc(var(--content) * 23);   text-align: right;    font-family: 'Merriweather', serif;   width: 100%;}
+
+/* 탐색경로바 */
+.path { display:none; overflow:hidden; height:30px; line-height:30px; *zoom:1; }
+.path span { overflow:hidden; position:absolute; width:0; height:0; white-space:nowrap; text-indent:100%; }
+.path ol { float:right; }
+.path li { float:left; padding:0 0 0 12px; margin:0 0 0 8px; color:#757575; background:url("//img.echosting.cafe24.com/skin/base/layout/ico_path.gif") no-repeat 0 10px; }
+.path li:first-child { background:none; }
+.path li a { color:#757575; }
+.path li strong,
+.path li strong a { color:#2e2e2e; }
+
+/* 타이틀 */
+.titleArea { min-height:30px; margin:10px 0 20px;  }
+.titleArea h2 { display:inline-block; padding:0 0 00px; color:#2e2e2e; font-size:11px;      *display:inline; *zoom:1; }
+.titleArea h2 i {padding-right:8px; font-size:20px; vertical-align:middle}
+.titleArea p { display:inline-block; margin:0 0 0 6px; padding:0 0 0 10px; color:#939393; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 0; *display:inline; *zoom:1; }
+.titleArea ul { padding:5px 0; color:#939393; line-height:18px; }
+.titleArea ul li { padding:0 0 0 9px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_square2.gif") no-repeat 4px 7px; }
+
+/* 퀵뷰 모달 */
+#modalBackpanel { display:none; position:absolute; top:0; left:0; z-index:10000; width:100%; height:100%; background:#000; }
+#modalContainer { display:none; position:absolute; top:100px; left:100px; z-index:10001; width:975px; height:720px; border:1px solid #333; background:#fff; }
+#modalContainer #modalContent { width:100%; height:100%; }
+
+
+/*  reactive 소스 */
+@media all and (max-width : 640px) {  /*아이폰 5이하 */
+   #container { padding:0 30px;  *zoom:1; }
+   #contents {margin:80px auto 0; padding:0!important}
+   #contents_ {margin:80px auto 0; padding:0!important}
+            }
+
+@media all and (min-width : 641px) and (max-width : 802px) and (orientation : landscape)  {  /*아이패드 탭 데스크탑 -모드*/
+    #container { padding:0 30px;  *zoom:1; }
+    #contents {margin:130px auto 0; padding:0 40px 0 200px!important}
+    #contents_ {margin:0px auto 0; padding:0 40px 0 200px!important}
+            }
+@media all and (min-width : 641px) and (max-width : 802px) and (orientation : portrait)  {  /*아이패드 탭 |모드*/
+     #container {padding:0 30px;*zoom:1; }
+     #contents {margin:130px auto 0; padding:0 40px 0 200px!important}
+     #contents_ {margin:0px auto 0; padding:0 40px 0 200px!important}
+            }
+
+@media all and (min-width : 803px) and (max-width : 1440px)  {  
+    #container { padding:0 30px;  *zoom:1; }
+    #contents {margin:130px auto 0; padding:0 40px 0 200px!important}
+    #contents_ {margin:0px auto 0; padding:0 40px 0 200px!important}
+            }
+ 

@@ -1,0 +1,16 @@
+<!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+        <div module="product_action" id="{$fixed_action_button}" style="margin:0px 0 0">
+            <div class="ec-base-button gColumn {$action_display|display}" style="display:block">
+                <button type="button" class="btnNormal {$basket_display|display}" onclick="{$action_basket}" id="actionCart" style="width:40%; float: left; box-sizing: border-box;border:1px solid #777; margin:0; height:40px; line-height:39px;  font-size:11px; font-family:Arial">ADD CART</button>
+                <a href="#none" class="btnStrong {$buy_display|display}" onclick="{$action_buy}" style=" float:left; margin:0;  box-sizing: border-box; width:60%; border:1px solid #777; border-left:0;  float: left; background:#fff; color:#000!important;  box-sizing: border-box;display:block; height:40px; line-height:39px; font-size:11px; font-family:Arial";"><span id="{$btn_buy_mobile_id}">BUY NOW</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span></a>
+                <!--button type="button" class="btnNormal {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish">관심상품</button-->
+            </div>
+            <div class="ec-base-button gColumn soldout {$action_soldout_display|display}">
+                <button type="button" class="btnStrong {$soldout_display|display}">SOLD OUT</button>
+                <button type="button" class="btnNormal {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout">WISH ITEM</button>
+            </div>
+            <!-- 네이버 체크아웃 구매 버튼  -->
+            <div id="NaverChk_Button" style="display:none;"></div>
+             <div id="{$app_payment_button_box_id}"></div>
+        </div>
+<!-- //참고 -->

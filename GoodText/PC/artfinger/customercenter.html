@@ -1,0 +1,92 @@
+<!--@layout(/layout/basic/layout.html)-->
+    <!--@css(/css/module/mall/privacy.css)-->
+<div module="mall_term" class="ec-base-box typeThinBg"  id="shopguide">
+<div module="mall_faq">
+    <div class="titleArea">
+    <h2>SHOP GUIDE</h2>
+	</div>
+    <!--@css(/css/module/mall/faq.css)-->
+    <div id="member" class="ec-base-tab grid7">
+      
+        <div class="cont">
+            <h3>회원가입 안내</h3>
+            {$member_info}
+        </div>
+    </div>
+
+    <div id="order" class="ec-base-tab grid7">
+        
+        <div class="cont">
+            <h3>주문 안내</h3>
+            {$order_info}
+        </div>
+    </div>
+
+    <div id="payment" class="ec-base-tab grid7">
+       
+        <div class="cont">
+            <h3>결제안내</h3>
+            {$payment_info}
+        </div>
+    </div>
+
+    <div id="etc" class="ec-base-tab grid7">
+        
+        <div class="cont">
+            <h3>기타안내</h3>
+            {$etc_info}
+        </div>
+    </div>
+</div>
+</div>
+
+<div module="mall_term" class="ec-base-box typeThinBg"  id="shipping" style="margin:50px 0 0;">
+<div module="mall_faq">
+    <div class="titleArea">
+    <h2>SHIPPING</h2>
+	</div>
+    <!--@css(/css/module/mall/faq.css)-->
+
+    <div id="delivery" class="ec-base-tab grid7">
+        
+        <div class="cont">
+            <h3>배송안내</h3>
+            <ul>
+                <li>배송 방법 : {$shipping_method}</li>
+                <li>배송 지역 : {$shipping_area}</li>
+                <li>배송 비용 : {$shipping_fee}</li>
+                <li>배송 기간 : {$shipping_period}</li>
+                <li>배송 안내 : {$shipping_agreement}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="change" class="ec-base-tab grid7">
+       
+        <div class="cont">
+            <h3>교환/반품안내</h3>
+            {$product_change_info}
+        </div>
+    </div>
+
+    <div id="refund" class="ec-base-tab grid7">
+        
+        <div class="cont">
+            <h3>환불안내</h3>
+            {$refund_info}
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+<div module="mall_term" class="ec-base-box typeThinBg "  id="termsofuse" style="margin:50px 0 0;">
+      <div class="titleArea">
+    <h2>TERMS OF USE</h2>
+	</div>
+    <div class="agree">
+        {$mall_agreement}
+    </div>
+</div>

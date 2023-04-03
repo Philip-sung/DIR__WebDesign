@@ -1,0 +1,28 @@
+<div module="product_relation">
+    <!--@css(/css/module/product/relation_swipe.css)-->
+    <!--
+        $count = 3
+        $swipe = yes
+        $line = 1
+        $grid = 3
+    -->
+    <h2>YOU MAY ALSO LIKE</h2>
+    <ul class="grid3" module="product_relationlist">
+        <li class="item">
+            <div class="thumbnail"><a href="{$link_product_detail}"><img src="{$img_small}" alt="{$seo_alt_tag}" class="thumb" /></a></div>
+            <div class="information">
+                <p class="name"><a href="{$link_product_detail}">{$name}</a></p>
+                <p class="price {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</p>
+                <p class="price {$sale_price_display|display}">{$disp_sale_price}</p>
+            </div>
+        </li>
+        <li class="item">
+            <div class="thumbnail"><a href="{$link_product_detail}"><img src="{$img_small}" alt="{$seo_alt_tag}" class="thumb" /></a></div>
+            <div class="information">
+                <p class="name"><a href="{$link_product_detail}">{$name}</a></p>
+                <p class="price {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</p>
+                <p class="price {$sale_price_display|display}">{$disp_sale_price}</p>
+            </div>
+        </li>
+    </ul>
+</div>

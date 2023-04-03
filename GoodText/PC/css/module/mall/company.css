@@ -1,0 +1,6 @@
+.xans-mall-company {width:100%;  position:relative}
+.xans-mall-company::after {clear:both; display:block; content:""}
+.xans-mall-company .about1 {position:relative;}
+
+.xans-mall-company img {max-width:100%; text-align:center;}
+

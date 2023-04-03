@@ -1,0 +1,97 @@
+<!--@layout(/layout/basic/layout.html)-->
+  
+<!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+<div module="search_form" style="padding-top:10vh;">
+ 
+ <div class="title">
+      	    <h2>PRODUCT SEARCH</h2>
+      	    <p>Make sure you have entered your search term(s) correctly.</p>
+            </div>  
+<div module="Layout_SearchHeader" >
+                    <!--@css(/css/module/layout/searchHeader2.css)-->
+                      <!--
+                            $product_page=/product/detail.html
+                            $category_page=/product/list.html
+                       -->
+                       <fieldset style="padding:0 8px;">
+                       <legend>검색</legend>
+                       <a href="#" alt="검색" onclick="{$action_search_submit}"><img src="//ecudemo126732.cafe24.com/artfinger/img/bg_search.png" style="width:20px ; position: absolute; left:19px; margin-top:20px; vertical-align: middle;"></a>   {$form.keyword} <a href="#" alt="검색" onclick="{$action_search_submit}" class="searchBut2">SEARCH</a></fieldset>
+                    </div>
+
+    
+
+    <div class="noData {$search_fail_display|display}">
+        <strong class="warning">No results were found for your search.</strong>
+        
+    </div>
+</div><!-- //참고 -->
+
+<div module="Search_Result" class="ec-base-product">
+    <!--
+        $count = 40
+    -->
+    <ul class="prdList grid4" style="padding-top:158px;">
+         <li id="anchorBoxId_{$product_no}">
+            <div class="thumbnail">
+                <div class="prdImg">
+                    <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" /><span module="Search_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+              
+                </div>
+                <div class="icon">
+                    <div class="promotion">{$soldout_icon} {$stock_icon}  {$product_icons} {$pickup_icon}</div>
+                    <div class="button">
+                       <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
+                   
+                   </div>
+                </div>
+            </div>
+            <div class="description">
+                <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                <ul module="search_ListItem" class="spec">
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                </ul>
+            </div>
+        </li>
+        <li id="anchorBoxId_{$product_no}">
+            <div class="thumbnail">
+                <div class="prdImg">
+                    <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" /><span module="Search_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                   n>
+                </div>
+                <div class="icon">
+                    <div class="promotion">{$soldout_icon} {$stock_icon}  {$product_icons} {$pickup_icon}</div>
+                    <div class="button">
+                       <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
+                   
+                   </div>
+                </div>
+            </div>
+            <div class="description">
+                <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                <ul module="search_ListItem" class="spec">
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<div module="search_paging" class="ec-base-paginate">
+    <!--@import(/artfinger/common/page_pre.html)-->
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <!--@import(/artfinger/common/page_next.html)-->
+</div>

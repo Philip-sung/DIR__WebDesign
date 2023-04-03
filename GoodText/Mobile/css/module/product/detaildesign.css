@@ -1,0 +1,16 @@
+#prdInfo {  }
+/* 상품 교환정보 */
+.prd_info_tab i {font-size:16px; vertical-align:middle ; padding:0 5px 0 0; font-weight:normal; color:#000}
+.xans-product-additional .cont_info { padding:30px 0; color:#555; line-height:18px; font-size:11px; letter-spacing:0}
+.xans-product-additional .cont_info h3 { margin:0 0 20px; color:#000; font-size:12px; line-height:18px; font-weight:normal}
+.xans-product-additional #prdInfo {margin:100px 0 0;  border:1px solid #ddd;}
+
+.xans-product-detaildesign { padding:14px 7px 7px; background:#f1f1f1; }
+.xans-product-detaildesign > .ec-base-table input#quantity,
+.xans-product-detaildesign > .ec-base-table img.QuantityUp,
+.xans-product-detaildesign > .ec-base-table img.QuantityDown { display:none; }
+.xans-product-detaildesign > .ec-base-table img#qrcode { width:70px; margin-right:-20px; margin-top:15px; }
+.xans-product-detaildesign > .ec-base-table .discount { display:block; font-size:11px; color:#1c1c1c; }
+.xans-product-detaildesign > .ec-base-table .period { display:block; }
+.xans-product-detaildesign > .ec-base-table #delivery_cost_prepaid { display:block; }
+.xans-product-detaildesign > .ec-base-table #btn_email_restock img { width:auto; height:26px; }

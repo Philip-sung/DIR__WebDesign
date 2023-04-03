@@ -1,0 +1,37 @@
+<div class="toplogo"><!--logo--> 
+      		<h1 module="Layout_LogoTop">
+            <a href="/"><!--@import(/toplogo.html)--><a>
+    		</h1>  
+</div><!--//logo-->   
+<a href="#" class="leftcate_reactive_open" onclick="layer_open('layer2');return false;"><span class="line1"></span><span class="line2"></span><span class="line3"></span></a>
+
+<div class="leftcate_reactive_cont">
+    
+   <div class="bg">
+       <div class="btn-r"><a href="#" class="leftcate_reactive_close"></a></div>
+   </div>
+   
+   <div id="layer2" class="pop-layer">
+	 
+			<!--@js(/artfinger/js/leftcate_reactive_cate.js)-->
+            <!--@js(/artfinger/js/left_menu.js)-->
+	    	<nav id="artfinger_slide">
+                 <div class="leftcate_membership">
+                    <!--@import(/artfinger/membercate.html)-->
+                </div>   
+				 <div id="menu_v" class="menu_v"> <!--MENU V-->
+                       <ul>
+                          <!--@import(/artfinger/side_common.html)-->
+
+                       </ul>
+                    </div> <!--//MENU V-->
+                      <div class="snscate">  
+                         <ul>
+                             <!--@import(/artfinger/foot_sns.html)-->
+                         </ul>  
+                  </div>    
+               
+			</nav>
+       
+	</div><!--close pop-layer-->
+</div>

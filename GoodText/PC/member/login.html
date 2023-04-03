@@ -1,0 +1,82 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div module="member_login">
+    <!--@css(/css/module/member/login.css)-->
+    <!--
+        $defaultReturnUrl = /index.html
+        $forbidIpUrl = member/adminFail.html
+    -->
+  
+    <div class="login" >
+        
+  
+        <fieldset>
+           
+            <p class="title">RETURNING CUSTOMERS</p>
+           
+            <legend>회원로그인</legend>
+            <label class="id ePlaceholder" title="ID">{$form.member_id}</label>
+            <label class="password ePlaceholder" title="PASSWORD">{$form.member_passwd}</label>
+            <a href="#none" onclick="{$action_func_login}" class="login-a"><div class="login-b"> LOG IN </div></a>
+            <a href="/member/join.html"  class="login-a"><div class="login-b"> JOIN US </div></a>
+            <p class="security">
+                {$form.member_check_save_id}
+            </p>
+               <ul>
+                <li><a href="/member/id/find_id.html"><i class="xi-check"></i> FORGOT ID</a></li>
+                <li><a href="/member/passwd/find_passwd_info.html"><i class="xi-check"></i> FORGOT PASSWORD</a></li>
+                <li><a href="/myshop/order/list.html"><i class="xi-check"></i> ORDER CHECK</a></li> 
+            </ul>
+           
+           
+            <ul class="snsArea" style="text-align:center; padding: 10px 0 0 0;  ">
+                <li class="{$display_naver|display}">
+                    <a href="#none" onclick="{$naver_func_login}" ><img src="//ecudemo96329.cafe24.com/artfinger/img/social-naver.png" alt="네이버 로그인" >네이버 로그인</a>
+                </li>
+                <li class="{$display_facebook|display}">
+                    <a href="#none" onclick="{$facebook_func_login}"><img src="//ecudemo96329.cafe24.com/artfinger/img/social-facebook.png" alt="페이스북 로그인" >페이스북 로그인</a>
+                </li>
+                <li class="{$display_google|display}">
+                    <a href="#none" onclick="{$google_func_login}"><img src="//ecudemo96329.cafe24.com/artfinger/img/social-google.png" alt="구글 로그인" >구글 로그인</a>
+                </li>
+                <li class="{$display_kakao|display}">
+                    <a href="#none" onclick="{$kakao_func_login}"><img src="//ecudemo96329.cafe24.com/artfinger/img/social-kakao.png" alt="카카오계정 로그인">카카오계정 로그인</a>
+                </li>
+
+                 <li class="{$display_line|display}">
+                    <a href="#none" onclick="{$line_func_login}"><img src="/artfinger/img/social-line.png" alt="LINE 로그인">LINE 로그인</a>
+                </li>
+            </ul>
+            </div> 
+           
+            <div class="link {$display_nomember|display} artfinger_button_login_nomemberpur" id="noMemberWrap">
+                <a href="{$returnUrl}" onclick="{$action_nomember_order}">비회원 구매</a>
+            </div>
+        </fieldset>
+    </div>
+
+
+<div module="MyShop_OrderHistoryNologin">
+    <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/detail.html
+    -->
+    <div class="login-img" style="max-width:100%; margin:0 0 0px;">
+    <p>GUEST CHECKOUT</p>
+    </div>
+    
+ 
+                            
+    <table class="artfinger_guese_tb" cellspacing="10px">
+        <tr>
+       <th>{$form_label.order_name}</th><th>{$form.order_name}</th>
+        </tr>
+        <tr>
+        <th>{$form_label.order_id}</th><th>{$form.order_id}</th>
+        </tr>
+        <tr>
+        <th>{$form_label.order_password}</th><th>{$form.order_password}</th>
+        </tr>
+    </table>
+    <p class="artfinger_button_login_nomemberjo1"> <input class="artfinger_button_login_nomemberjo2"  type="submit" value="조회" style="cursor:pointer"></p>
+</div> </div> 

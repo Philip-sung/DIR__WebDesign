@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'themify';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/web/upload/font/themify.eot);
+  src: url(/web/upload/font/themify.woff) format('woff'),
+       url(//web/upload/font/themify.ttf) format('truetype');
+}
+
+
+
+
+.ti-shopping-cart-full::before {  content: "\e655"; }

@@ -1,0 +1,17 @@
+#contents { padding:0 0 8px; }
+.xans-mall-company { margin:0px 0px 0; font-size:13px; }
+.xans-mall-company .info {  background:#fff; margin-top:30px }
+ .xans-mall-company .info h2 {font-size:12px; margin-bottom:10px; padding:0 7px; text-align:center;}
+.xans-mall-company .info:first-child { margin-top:0; }
+.xans-mall-company .info .desc { padding:0 7px;  font-size:11px!important; }
+.xans-mall-company .info > span { display:block; padding:7px 7px; text-align:center; }
+.xans-mall-company .info > span img { max-width:100%; }
+.xans-mall-company .info p {line-height:1.5!important }
+.xans-mall-company .info span { line-height:1.5!important }
+.xans-mall-company .about_button {padding:8px 10px 15px 14px; background:#000; width:150px; text-align:center; margin:30px 7px; }
+.xans-mall-company .about_button a {color:#fff; font-size:12px}
+.xans-mall-company .about_button a:hover {text-decoration:none; opacity:0.6}
+.xans-mall-company  img { max-width:100%; height:auto!important }
+
+.xans-mall-company .about_1 p, .xans-mall-company .about_1 span, .xans-mall-company .about_1 span > span {
+    font-size: 1.0em!important;}

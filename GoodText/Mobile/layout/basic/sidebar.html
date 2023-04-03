@@ -1,0 +1,48 @@
+<!--@css(/layout/basic/css/slideMenu.css)-->
+<!--@js(/layout/basic/js/slide_menu.js)-->
+<!--@js(/layout/basic/js/left_menu.js)-->
+
+<nav id="artfinger_slide">
+<div class="artfinger_slide_wrap">
+    
+    <div class="member_state">
+   
+    <p module="Layout_stateLogoff" class="member">
+        <a href="/member/login.html" >SIGN IN</a>
+         <a href="/myshop/order/list.html" >ORDER</a>
+        <a href="/myshop/index.html" >MYPAGE</a>
+       
+    </p>       
+        
+    <p module="Layout_statelogon" class="member">
+         <a href="{$action_logout}" >LOGOUT</a>
+          <a href="/myshop/order/list.html" >ORDER</a>
+        <a href="/myshop/index.html" >MYPAGE</a>
+    </p>
+    </div>
+
+    <div id="menu_v" class="menu_v"><!--MENU V-->
+                <ul>
+                  <!--@import(/artfinger/side_common.html)-->
+               </ul>
+    </div> <!--//MENU V-->
+    <!--import(/artfinger/global.html)-->
+
+   <div class="snscate">  
+                     <ul>
+                         <!--@import(/artfinger/foot_sns.html)-->
+                     </ul>  
+    </div> 
+                  
+	</div> 
+</nav>
+
+
+<script> 
+    $( ).ready(function(){ 
+        $('.nochild > .view').css({
+            'background-color' : 'red',
+            'font-size' : '20px',
+            'border' : '10px'});
+    }); 
+</script>

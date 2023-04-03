@@ -1,0 +1,22 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/css/module/mall/company.css)-->
+<div class="contact" module="Layout_footer">
+  <div class="map">
+  <!--@import(/artfinger/map.html)-->    
+  </div>
+  <div class="contactinfo">  
+            <h2 class="title">CONTACT</h2>
+            <h3>ADDRESS</h3>
+            <div>{$mall_zipcode} {$mall_addr1} {$mall_addr2}</div>
+
+            <h3>TEL</h3>
+            <div>{$phone}</div>
+
+            <h3>CUSTOMER CENTER</h3>
+            <div module="Layout_Info">{$runtime}</div>
+
+             <h3>E-MAIL</h3>
+            <div module="Layout_Info">{$cpo_email}</div>
+   </div> 
+    
+</div>

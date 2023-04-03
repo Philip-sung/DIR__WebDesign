@@ -1,0 +1,14 @@
+<!-- 하단 고정 버튼 액션 레이어 -->
+        <div module="product_action" class="ec-base-button gFixed" id="orderFixArea">
+            <div class="ec-base-button gColumn {$action_display|display}" >
+                <!--<a href="#prdReview" class="btnNormal">REVIEW <span module="product_additional" style="margin:0">({$review_count})</span></a>-->
+                <button type="button" class="btnNormal {$basket_display|display}" id="actionCartClone">CART</button>
+                <!--button type="button" class="btnNormal {$wishlist_display|display}" id="actionWishClone">WISH ITEM</button-->
+                <a href="#none" class="btnStrong {$buy_display|display}"><span id="{$btn_buy_mobile_clone_id}">BUY NOW</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_clone_id}">예약주문</span></a>
+            </div>
+            <div class="ec-base-button gColumn {$action_soldout_display|display}">
+                <button type="button" class="btnStrong {$soldout_display|display}">SOLD OUT</button>
+                <button type="button" class="btnNormal {$wishlist_display|display}" id="actionWishSoldoutClone">WISH ITEM</button>
+            </div>
+        </div>
+<!-- //참고 -->

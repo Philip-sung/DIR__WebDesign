@@ -1,0 +1,53 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Product_menupackage">
+    <!--@css(/css/module/product/menupackage.css)-->
+    <!--@js(/js/module/product/menucategory.js)-->
+    <!--p class="banner">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</p-->
+    <!--div class="title" module="product_headcategory"><h2><span>{$title_text}</span></h2></div-->
+    <ul class="menuCategory">
+        <!--li class="title" module="product_headcategory"><h2><span>{$name_1}</span></h2></li-->
+        <li module="product_displaycategory" style="display:{$display};" class="{$selected}">
+            <a href="/artfinger/lookbook.html?{$param_cate_no}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+            <ul module="product_children">
+                <li class="{$selected}">
+                    <a href="/artfinger/lookbook.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="{$selected}">
+                    <a href="/artfinger/lookbook.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!-- 일반상품 -->
+
+<!-- 상단 제품 정보  -->
+ 
+
+  
+    <!--@css(/css/module/product/detail.css)-->
+    
+
+
+<div module="product_additional" class="additional">
+    <!--@css(/css/module/product/additional.css)-->
+    <!--@import(/artfinger/detail_lookbook_1.html)-->
+    <!--@import(/artfinger/detail_purchaseinfo.html)-->
+</div>
+
+<!--@import(/artfinger/detail_productwith.html)-->
+

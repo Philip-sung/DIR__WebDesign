@@ -1,0 +1,25 @@
+#productnew { margin:0 auto 50px; }
+#productnew > ul {display:block; margin-bottom:0!important; }
+#productnew > ul > li {border-top:1px solid #dfdfdf; margin:0!important}
+#productnew > ul > li:last-child {border-bottom:1px solid #dfdfdf}
+
+.ec-base-product .prdList .thumbnail img {    max-width: 100%;    box-sizing: border-box;}
+#productnew > ul > li {display:flex; justify-content: space-between; position:relative} 
+#productnew > ul > li > .thumbnail {flex:1;  margin:0!important; padding:30px 30px 30px 0px;}
+#productnew > ul > li > .thumbnail > .prdImg img {max-width:100%}
+
+#productnew > ul > li > .description {flex:1;  margin:0!important; padding:30px 0px 30px 30px;}
+#productnew > ul > li > .description > .inner {flex:1; position:absolute; left:0; top:50%; transform: translateY(-50%); width:25%; margin-left:7%; float:left; vertical-align:middle }
+#productnew > ul > li > .description > .inner > .name {     text-align: center; }
+#productnew > ul > li > .description > .inner > .name > a {font-size:25px; line-height:1}
+#productnew > ul > li > .description > .inner > .name > a > ul {margin-top: 5%!important;}
+#productnew > ul > li > .description > .inner > .spec > li {line-height:120%; margin-bottom:30px;  text-align: center;}
+#productnew > ul > li > .description > .inner > .spec > li b {border-bottom:1px solid #9e9e9e;  margin:0 3px}
+
+
+
+
+
+
+
+

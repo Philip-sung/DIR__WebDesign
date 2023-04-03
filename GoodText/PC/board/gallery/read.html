@@ -1,0 +1,61 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="board_ReadPackage_8">
+    <!--@css(/css/module/board/readPackage.css)-->
+
+
+    <div module="board_read_8">
+        <!--
+            $delete_success_url = /board/gallery/list.html
+            $login_page_url = /member/login.html
+            $deny_access_url = /board/gallery/list.html
+        -->
+        
+        <div class="ec-base-table typeWrite">
+             <div class="title">
+            <h2>{$subject}  <a href="{$link_board_list}" style="padding:0 10px;color:#555; font-size:13px;"> ㅣ <span style="padding-left:5px"></span>목록으로</a></h2>
+            </div>
+          <div class="detail" style="padding:0; margin:10px 0 0; border:0;">{$content}</div>
+           
+        <div class="ec-base-button">
+            <span class="gLeft">
+                <span class="{$config.is_admin|display}">
+                    <div class="artfinger_button_board_list"><a href="#none" onclick="{$action_post}" class="admin {$config.is_post|display}">관리자게시</a></div>
+                    <div class="artfinger_button_board_list"><a href="#none" onclick="{$action_post}" class="admin {$config.not_post|display}">게시안함</a></div>
+                    <div class="artfinger_button_board_list"><a href="#none" onclick="{$action_spam}">스팸신고</a></div>
+                    <div class="artfinger_button_board_list"><a href="#none" onclick="{$action_spam_cancle}">스팸해제</a></div>
+                </span>
+               
+            </span>
+            <span class="gRight">
+                <div class="artfinger_button_board_list"><a href="{$link_board_list}">목록으로</a></div>
+                <div class="artfinger_button_board_list"><a href="#none" onclick="{$action_delete}" class="{$delete_button_auth|display}">삭제</a></div>
+                <div class="artfinger_button_board_list"><a href="/board/gallery/modify.html{$param_modify}" class="{$modify_button_auth|display}">수정</a></div>
+                <div class="artfinger_button_board_list"><a href="/board/gallery/reply.html{$param_reply}" class="{$reply_button_auth|display}">답변</a></div>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div module="board_movement_8">
+    <!--@css(/css/module/board/movement.css)-->
+    <ul>
+        <li class="prev {$prev_display|display}"><strong>Previous : </strong><a href="{$link_board_detail_prev}">{$prev_subject}</a></li>
+        <li class="next {$next_display|display}"><strong>Next : </strong><a href="{$link_board_detail_next}">{$next_subject}</a></li>
+    </ul>
+</div>
+
+<!-- 관리자 전용 메뉴 -->
+<div module="board_function_8">
+    <!--@css(/css/module/board/function.css)-->
+    <!--
+        $success_return_url = /board/gallery/list.html
+     -->
+    <p>
+        해당 글 이동 {$form.boardGroup} 으로
+        <a href="#none" onclick="{$action_article_move}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/btn_move.gif" alt="글 이동" /></a>
+        <a href="#none" onclick="{$action_article_copy}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/btn_copy.gif" alt="글 복사" /></a>
+        * 댓글포함, 답변 불포함
+    </p>
+</div>
+<!-- //관리자 전용 메뉴 -->
+<!--@define(cmc_log)-->

@@ -1,0 +1,90 @@
+<footer module="layout_footerPackage" id="footer">
+    <!--@css(/css/module/layout/footerPackage.css)-->
+     <div module="Layout_SearchHeader" class="Layout_SearchHeader" >
+                      <!--
+                      $category_page=/product/list.html
+                      -->
+                      <fieldset>
+                        <legend>검색</legend>
+                        <div class="searchForm">
+                            <div class="searchFormWrap">
+                            {$form.keyword}<button type="button" class="btnSearch" onclick="{$action_search_submit}">search</button>
+                            </div>   
+                        </div>
+                      </fieldset>
+    </div> 
+    <div class="footerMenu">
+        <ul class="policy">
+         	<li><a href="/member/mall_agreement.html">AGREEMENT</a></li>
+            <li><a href="/shopinfo/guide.html">GUIDE</a></li>
+            <li><a href="/member/privacy.html">PRIVACY POLICY</a></li>
+            <li><a href="#none" onclick="javascript:isPCver();">PCver</a></li>
+        </ul>
+    </div>
+    
+     <div module="Layout_Info">
+                <!--@css(/css/module/layout/info.css)-->
+                <ul>
+                    <li>{$runtime}</li>
+                </ul>
+ 		 </div> 
+     
+    <address module="Layout_footer">
+        <div class="footerInfo" style="text-align: left; font-size:7px">
+            <ul>
+                <li>COMPANY {$company_name} </li>
+                <li>OWNER {$president_name} <span></span> BUSINESS NO {$company_regno} </li>
+                <li>TEL {$phone} <span></span>  E-MAIL {$cpo_email}  </li>
+                <li> MAIL-ORDER NO {$network_regno} </li>
+                <li> ADDRESS {$mall_zipcode} {$mall_addr1} {$mall_addr2}</li>
+                <li>Copyright &copy;{$mall_name} All rights reserved.</li>
+            </ul>   
+        </div>
+    </address>
+</footer>
+
+
+
+
+<div id="progressPaybar" style="display:none;">
+    <!-- 배경 -->
+    <div id="progressPaybarBackground" class="layerProgress"></div>
+    <!-- 진행바 -->
+    <div id="progressPaybarView">
+        <p class="graph">현재 결제가 진행중입니다.</p>
+        <p class="txt">
+            본 결제 창은 결제완료 후 자동으로 닫히며, <br>
+            결제 진행 중에 본 결제 창을 닫으시면<br>
+            주문이 되지 않으니 <br>
+            결제 완료 될 때 까지 닫지 마시기 바랍니다.
+        </p>
+    </div>
+</div>
+<div module="Layout_multishopShipping" class="ec-base-layer typeModal">
+    <!--@css(/css/module/layout/multishopShipping.css)-->
+    <!--@js(/js/module/layout/multishopShipping.js)-->
+    <h1>WORLD SHIPPING</h1>   
+    <div class="wrap worldshipLayer">
+        <p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+        <div class="select">
+            <select module="Layout_multishopShippingCountrylist">
+                <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+            </select>
+        </div>
+        <div class="select">
+            <select module="Layout_multishopShippingLanguagelist">
+                <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+            </select>
+        </div>
+    </div>
+    <div class="ec-base-button gFull">
+        <a href="#none" class="btnSubmit">GO</a>
+    </div>
+    <a href="#none" class="btnClose">닫기</a>
+</div>
+<div module="mobilequick_display">
+    {$quick_link}
+    {$quick_button}
+</div>

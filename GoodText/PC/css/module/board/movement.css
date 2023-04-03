@@ -1,0 +1,9 @@
+.xans-board-movement { border-top:1px solid #ddd;  margin:20px 0; padding:50px 0}
+.xans-board-movement li {overflow:hidden; padding:0 0px; line-height:140%; color:#353535;}
+.xans-board-movement li strong,
+.xans-board-movement li a { float:left; padding:10px 0 10px 5px;}
+.xans-board-movement li strong { padding-left:15px;  font-weight:500;  background:url("//img.echosting.cafe24.com/skin/base/board/ico_move_prev.gif") no-repeat 0 15px; }
+.xans-board-movement li a { }
+
+.xans-board-movement li.next { border:0; }
+.xans-board-movement li.next strong { background:url("//img.echosting.cafe24.com/skin/base/board/ico_move_next.gif") no-repeat 0 15px;  font-weight:500}

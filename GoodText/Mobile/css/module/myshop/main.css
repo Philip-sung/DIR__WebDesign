@@ -1,0 +1,6 @@
+.xans-myshop-main { border:1px solid #d5d5d5; background:#fff; }
+.xans-myshop-main li { border-top:1px solid #e1e1e1; background-size:20px; background-repeat:no-repeat; background-position:12px; }
+.xans-myshop-main li:first-child { border-top:0; }
+.xans-myshop-main li a { display:block; position:relative; padding:14px 14px 14px 14px; font-size:11px;}
+.xans-myshop-main li a:after { display:block; position:absolute; top:12px; right:12px; content:""; width:20px; height:20px; background:url("http://img.echosting.cafe24.com/skin/mobile/myshop/ico_arrow_right.png") no-repeat; background-size:20px 20px; }
+.xans-myshop-main li .count { color:#000; }

@@ -1,0 +1,37 @@
+<div module="product_detail"><!-- //상단 제품 정보 -->
+    <!--@css(/css/module/product/detail.css)-->
+    <div class="detailArea">
+        
+        <div class="imgArea" module="product_image"><!-- 이미지 영역 -->
+            <!--@js(/js/module/product/product_image.js)-->
+              <div class="keyImg" style="padding: 0 0 10px 0">
+                <div class="thumbnail">
+                    <a href="/product/image_zoom2.html{$zoom_param}" alt="{$product_code}" onclick="window.open(this.href, 'image_zoom2', 'toolbar=no,scrollbars=auto,resizable=yes,width=450,height=693,left=0,top=0', this);return false;">
+                        <img src="{$big_img}" alt="{$seo_alt_tag}" class="{$big_img_class} {$img_display|display}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+                    </a>
+                    <div id="zoom_wrap"></div>
+                </div>
+            </div>
+        </div><!-- //이미지 영역 -->
+       
+    </div>
+    <div class="supplyInfo {$supply_info_display|display}"><!-- 공급사:판매사정보 -->
+        {$supply_info}
+    </div> <!-- //공급사:판매사정보 -->
+   
+    <div class="eventArea {$common_event_a|display}">
+        <h3><span>이벤트</span></h3>
+        <div class="event">{$common_event_a}</div>
+    </div>
+</div><!-- //상단 제품 정보 -->
+ 
+
+
+
+<div module="product_additional" class="additional">
+    <!--@css(/css/module/product/additional.css)-->
+    <!--@import(/artfinger/detail_product.html)-->
+
+</div>
+
+

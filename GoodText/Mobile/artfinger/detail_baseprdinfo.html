@@ -1,0 +1,76 @@
+<div class="prdInfo">
+      <h1 class="name"><font size="3">{$name}</font></h1>
+            <div class="ec-base-table gClearCell">
+                <table border="1" style="margin-top: -5px; margin-bottom: -13px;">
+                    <caption>상품 정보</caption>
+                    <colgroup>
+                        <col style="width:100px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody class="priceArea">
+                        <tr class="{$product_price_display|display}">
+                            <!--th scope="row">PRICE</th-->
+                            <td class="price" colspan="2">
+                                <strong class="sale"><span id="span_product_price_text" class="{$product_price_class} {$product_sale_strike}" style="color:#c01718;">{$product_price}</span>{$txt_product_price}</strong><span id="span_product_price_text">{$product_tax_type_text}</span> <span class="soldOut"></span>
+                                <button type="button" class="btnRestockSms {$sms_restock_display|display}" onClick="{$action_sms_restock}">재입고 알림 SMS</button>
+                                <button type="button" class="btnRestockMail {$restock_email_display|display}" onClick="{$action_email_restock}">재입고 알림 메일</button>
+                            </td>
+                        </tr>
+                        <tr class="display_custom{$product_custom|replace:.00,}">
+                            <!--th scope="row">SALE</th-->
+                			<td colspan="2"><strong class="custom" style="text-decoration:line-through; color:#555; font-weight:normal">{$product_custom|numberformat}{$price_unit_tail}원</strong></td>
+                		</tr>
+                        <tr class="{$product_sale_display|display}" id="span_product_price_mobile_p_line">
+                            <!--th scope="row">SALE</th-->
+                            <td class="price" colspan="2"><strong class="sale"><span id="span_product_price_mobile_text" class="{$product_price_class}">{$product_price_mobile}</span>{$txt_product_price_mobile}</strong></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <!--tr id="span_product_price_mobile_d_line" class="{$product_sale_display|display}" style="display:none">
+                            <th scope="row">할인금액</th>
+                            <td><span class="discount">총 할인금액 {$mobile_dc_price|number}원<br>(모바일할인금액 {$mobile_dc_price|number}원)</span></td>
+                        </tr-->
+                        <tr class="mileage {$mileage_display|display}">
+                             <!--th scope="row">{$mileage_name}</th-->
+                            <td colspan="2">
+                                <p class="{$txt_mileage_display|display}"><span id="span_mileage_text">{$txt_mileage_value}</span><span class="{$txt_mileage_percent_display|display}">({$txt_mileage_percent}%)</span></p>
+                                <p class="{$cash_mileage_display|display}"><img src="{$cash_mileage_icon}" alt="무통장 결제시 적립금"><span class="{$cash_mileage_value_display|display}"> {$cash_mileage_value|numberformat} 원</span> <span class="{$cash_mileage_percent_display|display}">{$cash_mileage_percent}%</span></p>
+                                <p class="{$card_mileage_display|display}"><img src="{$card_mileage_icon}" alt="카드 결제시 적립금"><span class="{$card_mileage_value_display|display}"> {$card_mileage_value|numberformat} 원</span> <span class="{$card_mileage_percent_display|display}">{$card_mileage_percent}%</span></p>
+                                <p class="{$tcash_mileage_display|display}"><img src="{$tcash_mileage_icon}" alt="실시간 계좌이체시 적립금"><span class="{$tcash_mileage_value_display|display}"> {$tcash_mileage_value|numberformat} 원</span> <span class="{$tcash_mileage_percent_display|display}">{$tcash_mileage_percent}%</span></p>
+                                <p class="{$mileage_mileage_display|display}"><img src="{$mileage_mileage_icon}" alt="적립금 결제시 적립금"><span class="{$mileage_mileage_value_display|display}"> {$mileage_mileage_value|numberformat} 원</span> <span class="{$mileage_mileage_percent_display|display}">{$mileage_mileage_percent}%</span></p>
+                                <p class="{$cell_mileage_display|display}"><img src="{$cell_mileage_icon}" alt="휴대폰 결제시 적립금"><span class="{$cell_mileage_value_display|display}"> {$cell_mileage_value|numberformat} 원</span> <span class="{$cell_mileage_percent_display|display}">{$cell_mileage_percent}%</span></p>
+                                <p class="{$deposit_mileage_display|display}"><img src="{$deposit_mileage_icon}" alt="예치금 결제시 적립금"><span class="{$deposit_mileage_value_display|display}"> {$deposit_mileage_value|numberformat} 원</span> <span class="{$deposit_mileage_percent_display|display}">{$deposit_mileage_percent}%</span></p>
+                                <p class="{$escrow_mileage_display|display}"><img src="{$escrow_mileage_icon}" alt="에스크로 결제시 적립금"><span class="{$escrow_mileage_value_display|display}"> {$escrow_mileage_value|numberformat} 원</span> <span class="{$escrow_mileage_percent_display|display}">{$escrow_mileage_percent}%</span></p>
+                                <p class="{$vcash_mileage_display|display}"><img src="{$vcash_mileage_icon}" alt="가상계좌 결제시 적립금"><span class="{$vcash_mileage_value_display|display}"> {$vcash_mileage_value|numberformat} 원</span> <span class="{$vcash_mileage_percent_display|display}">{$vcash_mileage_percent}%</span></p>
+                                <p class="{$icash_mileage_display|display}"><img src="{$icash_mileage_icon}" alt="가상계좌 결제시 적립금"><span class="{$icash_mileage_value_display|display}"> {$icash_mileage_value|numberformat} 원</span> <span class="{$icash_mileage_percent_display|display}">{$icash_mileage_percent}%</span></p>
+                                <p class="{$kpay_mileage_display|display}"><img src="{$kpay_mileage_icon}" alt="케이페이 결제시 적립금"><span class="{$kpay_mileage_value_display|display}"> {$kpay_mileage_value|numberformat} 원</span> <span class="{$kpay_mileage_percent_display|display}">{$kpay_mileage_percent}%</span></p>
+                                <p class="{$paynow_mileage_display|display}"><img src="{$paynow_mileage_icon}" alt="페이나우 결제시 적립금"><span class="{$paynow_mileage_value_display|display}"> {$paynow_mileage_value|numberformat} 원</span> <span class="{$paynow_mileage_percent_display|display}">{$paynow_mileage_percent}%</span></p>
+                                <p class="{$payco_mileage_display|display}"><img src="{$payco_mileage_icon}" alt="페이코 결제시 적립금"><span class="{$payco_mileage_value_display|display}"> {$payco_mileage_value|numberformat} 원</span> <span class="{$payco_mileage_percent_display|display}">{$payco_mileage_percent}%</span></p>
+                                <p class="{$kakaopay_mileage_display|display}"><img src="{$kakaopay_mileage_icon}" alt="카카오페이 결제시 적립금"><span class="{$kakaopay_mileage_value_display|display}"> {$kakaopay_mileage_value|numberformat} 원</span> <span class="{$kakaopay_mileage_percent_display|display}">{$kakaopay_mileage_percent}%</span></p>
+                            </td>
+                        </tr>
+                        <tr class="{$naver_mileage_display|display}">
+                            <th>제휴적립금</th>
+                            <td>{$naver_mileage_title} {$naver_mileage_rate}</td>
+                        </tr>
+                    </tbody>
+                    <tbody class="delvtype">
+                        <tr class="{$delivery_display|display}">
+                            <th scope="row">배송방법</th>
+                            <td>{$delivery}</td>
+                        </tr>
+                        <tr class="{$delivery_price_display|display}">
+                            <th scope="row">배송비</th>
+                            <td>{$delivery_price}</td>
+                        </tr>
+                        <tr class="{$additional_description_translated_display|display}">
+                            <th scope="row">상품 추가설명 번역정보</th>
+                            <td>{$additional_description_translated}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <script src="//ecudemo59491.cafe24.com/artfinger/template1/tabcontent.js" type="text/javascript"></script> 
+                <!--@css(/artfinger/css/tab_detail.css)-->
+                <!--@import(/artfinger/detail_product_accordian.html)-->
+
+        </div>

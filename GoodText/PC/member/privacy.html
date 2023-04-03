@@ -1,0 +1,15 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<div module="mall_privacy">
+    <!--@css(/css/module/mall/privacy.css)-->
+    <div class="ec-base-box typeThinBg">
+        <strong class="date {$displayEnforce|display}">{$enforce_date}</strong>
+        <div class="agree">
+            {$privacy_agreement}
+        </div>
+    </div>
+    <div class="ec-base-button {$displayBeforeEnforce|display}">
+        <a href="{$before_enforce_link}" class="btnPrev" target="_blank">{$before_enforce_date}</a>
+    </div>
+</div>

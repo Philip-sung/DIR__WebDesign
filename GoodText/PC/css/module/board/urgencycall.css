@@ -1,0 +1,39 @@
+.UrgencyWrap{display:inline-flex; justify-content: center; margin:0 auto; width:100%}
+
+/*contact page*/
+.contact_urgency {padding-right:50px}
+.contact_urgency > .contactinfo h2 {font-size:13px; font-weight:normal; margin-bottom:20px;}
+.contact_urgency > .contactinfo h3 {font-size:13px;  font-weight:normal;  margin-bottom:10px; }
+.contact_urgency > .contactinfo div {margin-bottom:20px; font-size:12px;}
+.contact_urgency > .contactinfo span {color:#9e9e9e; width:100%; display:block; line-height:1.8}
+.contact_urgency > .contactinfo .tel {color:#000; font-size:13px;  margin-bottom:10px; }
+.contact_urgency > .contactinfo span > h3 {color:#000!important; margin-top:10px}
+
+.Urgency {}
+.xans-mall-urgencycall .info { margin:20px 10px; color:#8f8f8f; }
+.xans-mall-urgencycall .required { margin:-35px 0 10px; text-align:right; }
+.xans-mall-urgencycall .required img { vertical-align:middle; }
+.xans-mall-urgencycall .ec-base-table input[type=text],
+.xans-mall-urgencycall .ec-base-table textarea { width:500px; }
+.xans-mall-urgencycall .ec-base-table textarea { height:100px; }
+.xans-mall-urgencycall .ec-base-table #captcha { width:160px; }
+.xans-mall-urgencycall select {width:100%; padding: 10px 10px 10px 5px;   margin:0!important;}
+.xans-mall-urgencycall input {line-height: 34px!important;  height:32px!important; padding: 2px 6px!important;  }
+.artfinger_join_table table {margin:0!important; border-bottom: 1px solid #fff!important;}
+.artfinger_join_table table > tbody > tr > th {
+    width: 100%;
+    float: left;
+    border: none;
+    padding:0px 0 0px 0!important;
+ }
+.ur_product_search {padding:0!important}
+.ur_product_search > input {border:0!important; width:435px!important}
+
+.artfinger_join_table table > tbody > tr > td {
+    width: 100%;
+    float: left;
+    border: none;
+    padding: 5px 0 0 0!important;
+    }
+
+

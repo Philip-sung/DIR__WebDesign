@@ -1,0 +1,34 @@
+.xans-mall-urgencycall { overflow:hidden; }
+.xans-mall-urgencycall .required { margin:19px 7px 7px; font-size:11px; text-align:right; }
+.xans-mall-urgencycall .ec-base-table.typeWrite { margin:0 7px; }
+.xans-mall-urgencycall .ec-base-table.typeWrite .searchTxt { letter-spacing:-1px; }
+.xans-mall-urgencycall select,
+.xans-mall-urgencycall input[type="text"],
+.xans-mall-urgencycall textarea { width:100%; }
+.xans-mall-urgencycall .ec-base-button { padding:0 7px; }
+.contentform textarea {height:100px;}
+/*contact page*/
+.contact {padding:0 7px 5px; text-align:center}
+.contact > .contactinfo h2 {font-size:13px;  font-weight:normal; margin-bottom:20px;}
+.contact > .contactinfo h3 {font-size:13px;   font-weight:normal; margin-bottom:10px; }
+.contact > .contactinfo div {margin-bottom:20px; font-size:11px}
+.contact > .contactinfo span {color:#9e9e9e; width:100%; display:block; line-height:1.8}
+.contact > .contactinfo .tel {color:#000; font-size:13px;  margin-bottom:10px; }
+.contact > .contactinfo span > h3 {color:#000!important; margin-top:10px}
+
+.xans-mall-urgencycall select {width:100%;   margin:0!important;}
+.xans-mall-urgencycall input {line-height: 34px!important;  height:34px!important; padding: 2px 6px!important;  }
+.artfinger_join_table {border:0!important; }
+.artfinger_join_table table {margin:0!important; border-bottom: 1px solid #fff!important;}
+.artfinger_join_table table > tbody > tr > th {
+    float: left;
+    width:100%;
+    border: none;
+    padding:0px 0 0px 0!important;
+ }
+.artfinger_join_table table > tbody > tr > td {
+    float: left;
+    width:100%;
+    border: none;
+    padding: 5px 0 0 0!important;
+    }

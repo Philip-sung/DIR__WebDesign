@@ -1,0 +1,27 @@
+/* font */
+.txtWarn { color:#f45b55; }
+.txtEm { color:#000; }
+
+/* grid */
+.gBlank5 { display:block; margin-top:5px; }
+.gBlank7 { display:block; margin-top:7px; }
+.gBlank10 { display:block; margin-top:10px; }
+.gBlank20 { display:block; margin-top:20px; }
+.gBlank30 { display:block; margin-top:30px; }
+.gIndent10 { margin-left:10px; }
+.gIndent20 { margin-left:20px; }
+.gSpace10 { margin-right:10px; }
+.gSpace20 { margin-right:20px; }
+.gBreak5 { display:block; margin-bottom:5px; }
+.gBreak7 { display:block; margin-bottom:7px; }
+.gMerge { position:relative; z-index:1; margin-top:-1px; }
+
+/* ec-base-qty */
+.ec-base-qty [type="text"] { width:49px; }
+.ec-base-qty [type="tel"] { width:49px; text-align:right; }
+.ec-base-qty button { margin:0; padding:0; border:0; vertical-align:top; background:transparent; }
+
+/* ec-base-field */
+.ec-base-field { display:-webkit-flex; display:-ms-flex; display:flex; }
+.ec-base-field input[type="text"] { -webkit-flex:1; -ms-flex:1; flex:1; }
+.ec-base-field input ~ [class*='btn'] { margin-left:5px; }

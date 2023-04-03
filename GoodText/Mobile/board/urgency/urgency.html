@@ -1,0 +1,110 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Mall_Urgencycall">
+    <!--@css(/css/module/board/urgencycall.css)-->
+    <!--@js(/js/module/member/login.js)-->
+    <!--
+        $login_page = /member/login.html
+    -->
+ <div class="contact" module="Layout_footer">
+  <div class="contactinfo">  
+ 	       <div> <h3>E-MAIL</h3> <span>{$cpo_email}</span></div>
+
+            <div class="contct_customer" module="Layout_Info"> <h3 style="display:block; padding-bottom:10px">CUSTOMER CENTER</h3><span>{$runtime}</span></div>
+   </div> 
+</div>
+
+    
+    <div class="ec-base-table typeWrite artfinger_join_table">
+        <table border="0">
+            <caption>Contact Us</caption>
+  
+            <tbody>
+                 <tr>
+                  <td style="color:#000; font-size:11px">YOUR E-mail</td>
+                    <td class="ePlaceholder "title="ex) master@domain.com" >
+                        {$form.email}
+                    </td>
+                </tr>
+                <tr style="display:none">
+                    <td>{$form.question}</td>
+                </tr>
+               <tr>
+       
+                    <td class="ePlaceholder "title="Name" >{$form.writer}</td>
+                </tr>
+               <tr style="display:none">
+   
+                   <td  class="ePlaceholder" title="{$sPrdOrdText}" >
+                        <span class="ec-base-field">
+                            {$form.prd_ord}
+                             <a href="#none" id="opensearch" class="btnBasic" name="opensearch" onClick="{$Open_SearchLayer}">Search</a>
+                             {$form.hiddenPrdOrd}
+                        </span>
+                    </td>
+                </tr>
+               <tr>
+                    
+                    <td class="contentform">{$form.content}</td>
+                </tr>
+                
+                
+                
+                
+                
+                <tr style="display:none">
+                    <th class="searchTxt" scope="row">{$sPrdOrdText}</th>
+                    <td>
+                        <span class="ec-base-field">
+                            {$form.prd_ord}
+                             <a href="#none" id="opensearch" class="btnBasic" name="opensearch" onClick="{$Open_SearchLayer}">Search</a>
+                             {$form.hiddenPrdOrd}
+                        </span>
+                    </td>
+                </tr>
+                <tr class="reply" style="display:none">
+                    <th scope="row">Contact via</th>
+                    <td>{$form.chk_reply_type}</td>
+                </tr>
+ 
+                <tr class="info {$info_change_display|display}" style="display:none">
+                    <th scope="row">Change of Contact Info</th>
+                    <td>{$form.chk_info_change}</td>
+                </tr>
+
+ 
+                 <tr style="display:none"> 
+                    <th scope="row">Title</th>
+                    <td>{$form.title}</td>
+                </tr>
+            </tbody>
+            <tbody class="{$file_attatch_display|display}" style="display:none">
+                <tr>
+                    <th scope="row">Attachment1</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Attachment2</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Attachment3</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Attachment4</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Attachment5</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="ec-base-button gColumn">
+        <a href="#none" onclick="{$action_send}" class="btnSubmit">등록</a>
+        <a href="/board/index.html" class="btnEm">취소</a>
+    </div>
+</div>

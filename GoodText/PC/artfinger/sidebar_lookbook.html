@@ -1,0 +1,36 @@
+<div class="sidebar_lookbook">
+    <!--@css(/css/module/product/menupackage.css)-->
+    <!--@js(/js/module/product/menucategory.js)-->
+    <ul>
+        <div module="Product_menupackage">
+   			 <ul class="menuCategory_1">
+              <h2>lookbook</h2>    
+      		  <!--li class="title" module="product_headcategory"><h2><span>{$name_1}</span></h2></li-->
+       			 <li module="product_displaycategory" style="display:{$display};" class="{$selected}">
+         		   <a href="/artfinger/lookbook2.html?{$param_cate_no}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+        		    <ul module="product_children">
+            		    <li class="{$selected}">
+          		  	        <a href="/artfinger/lookbook2.html{$param}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+            		        <div class="button">
+            		            {$children_icon}
+             		           <ul module="product_children" class="subCategory">
+                  		          <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                    		        <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                   		      </ul>
+                    		</div>
+               			 </li>
+            		    <li class="{$selected}">
+          		  	        <a href="/artfinger/lookbook2.html?{$param}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+            		        <div class="button">
+            		            {$children_icon}
+             		           <ul module="product_children" class="subCategory">
+                  		          <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                    		        <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                   		      </ul>
+                    		</div>
+               			 </li>
+           			 </ul>
+      			  </li>
+   			 </ul>
+		</div>
+</div> 

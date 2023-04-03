@@ -1,0 +1,20 @@
+
+
+.css3-tab { list-style: none; margin:40px auto 40px; padding: 0px 0 0 0; position: relative; width: 100%;}
+.css3-tab input[type='radio'] { display: none;}
+.css3-tab .css3-tab-content {  display: none; background: #FFF; clear: left; box-sizing: border-box;}
+.css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] { color:#000; font-weight:bold; cursor: default; border-bottom:1px solid #000;}
+.css3-tab input[id='tabOne']:checked ~ div.tab-one { display: block;  }
+.css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] { color:#000; font-weight:bold; cursor: default; border-bottom:1px solid #000;}
+.css3-tab input[id='tabTwo']:checked ~ div.tab-two {display: block; }
+.css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {  color: black; cursor: default;}
+.css3-tab input[id='addNew']:checked ~ div.add-new { display: block; }
+.location {width:100%; text-align:center; margin:30px 0;}
+.location img{width:100%;}
+
+
+.css3-tab .css3-tab-nav { text-align:center;table-layout: fixed; }
+.css3-tab .css3-tab-nav label { display: inline-block; font-size:10px; color: #bbbbbb; text-align: center; transition: all .3s ease 0s;     border-bottom: 1px solid #fff;}
+.css3-tab .css3-tab-nav label:hover { cursor: pointer;  transition: all .3s  ease-in-out; border-bottom:1px solid #000; }
+.css3-tab-nav label {margin:0 15px;}
+

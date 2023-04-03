@@ -1,0 +1,81 @@
+<div class="prdOption">
+            <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+            <div class="ec-base-table typeWrite gClearCell">
+                <table border="1" module="product_option">
+                    <caption>상품 옵션</caption>
+                    <colgroup>
+                        <col style="width:100px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr class="{$delvtype_display|display}">
+                            <th scope="row">배송</th>
+                            <td>
+                                <label>{$form.delvtypeA}국내배송</label>
+                                <label>{$form.delvtypeB}해외배송</label>
+                            </td>
+                        </tr>
+                        <tr module="product_addoption">
+                            <th scope="row">{$add_option_name}</th>
+                            <td>
+                                {$form.add_option}
+                                <span class="byte" title="현재글자수/최대글자수">[ <strong class="length">0</strong> / {$option_maxlength} ]</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody module="product_option">
+                        <tr>
+                            <!--th scope="row">{$option_name}</th-->
+                            <td colspan="2">{$form.option}<p class="value">{$option_desc}</p></td>
+                        </tr>
+                        <tr module="product_quantity" class="quantity">
+                            <!--th scope="row">QTY</th-->
+                            <th>
+                                <div class="ec-base-qty">
+                                    <img class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="20" height="18">
+                                    {$form.quantity}
+                                    <img class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="20" height="18">
+                                </div>
+                            </th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="{$option_push_button_display|display}" id="{$option_push_button_id}">
+                            <td colspan="2" class="selectButton"><button type="button" class="btnStrong" onclick="{$action_push_button}">옵션 선택</button></td>
+                        </tr>
+                        <tr module="product_fileoption">
+                            <th scope="row">{$file_option_name}</th>
+                            <td class="fileInfo">
+                                {$form.file_option}
+                                <ul class="ec-base-help typeDash">
+                                    <li>파일은 최대 5개까지 {$file_option_limit}M 이하로 개별업로드 가능합니다.</li>
+                                    <li>동일상품이 장바구니에 있을 경우 현재 업로드 되는 파일로 교체됩니다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <!-- 다중선택형 -->
+                        <tr class="quantity {$quantity_display|display}">
+                             <!--th scope="row">QTY</th-->
+                            <th>
+                                <div class="ec-base-qty">
+                                    <img class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="20" height="18">
+                                    {$form.quantity}
+                                    <img class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="20" height="18">
+                                </div>
+                            </th>
+                        </tr>
+                        <!-- 단일선택형 -->
+                        <tr module="product_quantity" class="quantity">
+                             <!--th scope="row">QTY</th-->
+                            <th>
+                                <div class="ec-base-qty">
+                                    <img class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="20" height="18">
+                                    {$form.quantity}
+                                    <img class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="20" height="18">
+                                </div>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table><!-- //참고 -->
+            </div>
+        </div>

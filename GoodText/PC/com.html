@@ -1,0 +1,59 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    
+
+/*Tab 2*/
+.css3-tab-nav {   font-size: 0;  margin:15px 0 0px; list-style-type: none; text-align: left;  /*set to left, center, or right to align the tabs as desired*/}
+.css3-tab-nav label {display:inline-block; text-align:left;  margin: 0;  margin-right:15px; padding: 7px 0;   font-size:10px; color: #999;  }      
+
+div.tabcontents{  border-top:0; padding:10px 0; color: rgb(99, 99, 99);}
+.css3-tab { list-style: none; margin: 0 auto 40px; padding: 0px 0 0 0; position: relative; width: 100%;}
+.css3-tab input[type='radio'] { display: none;}
+.css3-tab .css3-tab-content {  display: none;  border-top:0; padding:10px 0; color: rgb(99, 99, 99);}
+
+.css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] { color:#000; }
+.css3-tab input[id='tabOne']:checked ~ div.tab-one { display: block;   }
+.css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] { color:#000; }
+.css3-tab input[id='tabTwo']:checked ~ div.tab-two {display: block;  }
+.css3-tab input[id='tabThree']:checked ~ .css3-tab-nav label[for='tabThree'] { color:#000; }
+.css3-tab input[id='tabThree']:checked ~ div.tab-three {display: block;  }
+.css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {  color: black; cursor: default;}
+.css3-tab input[id='addNew']:checked ~ div.add-new { display: block;   }
+    
+</style> 
+
+
+
+
+<script src="//ecudemo59491.cafe24.com/artfinger/template1/tabcontent.js" type="text/javascript"></script>   
+<div class='css3-tab'  style=" margin: 0px 0 10px;" module="mall_faq">
+		<input type='radio' name='a' id='tabOne' tabindex="1" checked>
+		<input type='radio' name='a' id='tabTwo' tabindex="2">
+        <input type='radio' name='a' id='tabThree' tabindex="3">
+       
+    
+    
+    <div class="css3-tab-nav">
+        <label for='tabOne' >INSTRUCTION</label>
+        <label for='tabTwo'>SIZE GUID</label>
+        <label for='tabThree'>SHIPPING</label>
+    </div>
+     
+
+    <div class='css3-tab-content tab-one'>
+            <div module="Board_ListPackage_1002">
+                  <div class="tab_wrap" module="board_list_1002">{$content}</div>  
+            </div>
+    </div>
+     <div class='css3-tab-content tab-two'>
+           <div module="Board_ListPackage_3001">
+                  <div class="tab_wrap" module="board_list_3001">{$content}</div>  
+            </div>
+     </div>  
+     <div class='css3-tab-content tab-three'>
+	   
+     </div>      
+         
+    
+    
+</div>

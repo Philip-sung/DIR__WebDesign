@@ -1,0 +1,105 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Mall_Urgencycall" class="UrgencyWrap">
+<!--@css(/css/module/board/urgencycall.css)-->
+
+<div class="contact_urgency" module="Layout_footer">
+  <div class="contactinfo">  
+ 	       <div> <h3>E-MAIL</h3> <span>{$cpo_email}</span></div>
+
+            <div class="contct_customer" module="Layout_Info"> <h3 style="display:block; ">CUSTOMER CENTER</h3><span class="tel">{$phone}</span><span>{$runtime}</span></div>
+   </div> 
+</div>
+
+
+<div class="Urgency"> 
+ 
+    <div class="ec-base-table typeWrite artfinger_join_table">
+        <table border="0" summary="">
+        <caption>Contact Us</caption>
+        <colgroup>
+            <col style="width:150px;" />
+            <col style="width:auto;" />
+        </colgroup>
+        <tbody>
+             <tr>
+                <th scope="row">YOUR E-mail</th>
+                <td class="ePlaceholder "title="ex) master@domain.com" >
+                    {$form.email}
+                </td>
+            </tr>
+            <tr >
+                <!--th scope="row">Name  <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" width="5" height="5" alt="必填" /></th-->
+                <td class="ePlaceholder "title="Name " >{$form.writer}</td>
+            </tr>
+            <tr style="border:1px solid #d7d5d5; display:none">
+                <!--h scope="row" >{$sPrdOrdText}</th-->
+                <td class="ePlaceholder ur_product_search" title="{$sPrdOrdText}" style="padding: 0!important;">{$form.prd_ord}<a href="#none" id="opensearch" class="btnEm" name="opensearch" onClick="{$Open_SearchLayer}">Search</a>
+                     {$urgency_write}
+                </td>
+            </tr>
+            <tr style="display:none">
+                <!--th scope="row">問題類型</th-->
+                <td colspan="2">{$form.question}</td>
+            </tr>
+           <tr>
+                <!--th scope="row">內容 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" width="5" height="5" alt="必填" /></th-->
+                <td colspan="2" class="ePlaceholder ">{$form.content}</td>
+            </tr>
+      
+            
+            
+            
+            <tr style="display:none">
+                <th scope="row">發問標題</th>
+                <td>{$form.title}</td>
+            </tr>
+            <tr >
+                <th scope="row" >{$sPrdOrdText}</th>
+                <td>{$form.prd_ord}&nbsp;&nbsp;
+                     <a href="#none" id="opensearch" class="btnEm artfinger_button_basket_delete" name="opensearch" onClick="{$Open_SearchLayer}">搜尋</a>
+                     {$form.hiddenPrdOrd}
+                </td>
+            </t>
+            <tr style="display:none">
+                <th scope="row">問答回覆方式</th>
+                <td>{$form.chk_reply_type}</td>
+            </tr>
+
+            <tr class="{$info_change_display|display}" style="display:none">
+                <th scope="row">同意修改會員資料</th>
+                <td>{$form.chk_info_change}</td>
+            </tr>
+
+
+        </tbody>
+        <tbody class="{$file_attatch_display|display}" style="display:none">
+            <tr>
+                <th scope="row">Attachment1</th>
+                <td>{$form.attach_file}</td>
+            </tr>
+            <tr>
+                <th scope="row">Attachment2</th>
+                <td>{$form.attach_file}</td>
+            </tr>
+            <tr>
+                <th scope="row">Attachment3</th>
+                <td>{$form.attach_file}</td>
+            </tr>
+            <tr>
+                <th scope="row">Attachment4</th>
+                <td>{$form.attach_file}</td>
+            </tr>
+            <tr>
+                <th scope="row">Attachment5</th>
+                <td>{$form.attach_file}</td>
+            </tr>
+        </tbody>
+        
+        </table>
+    </div>
+    <div class="ec-base-button center" style="text-align:center; margin:0 auto">
+          <div class="artfinger_button_join_join"> <a href="#none" class="btnSubmitFix sizeS" onclick="{$action_send}">등록</a><div>
+    </div>
+</div>
+</div>
+    
